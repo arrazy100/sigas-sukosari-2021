@@ -189,7 +189,7 @@ def materiFileSiswa(request, mapel_id = 0, slug = ''):
     return TemplateResponse(request, 'materi_filesiswa.html', context)
 
 @login_required(login_url='/guru-login')
-def hapusFileSiswa(request, filesiswa_id = 0, mapel_id = 0, slug = ''):
+def hapusFileSiswa(request, mapel_id = 0, filesiswa_id = 0, slug = ''):
     user_id = request.user.id
 
     teacher = getTeacherFromUserId(user_id)

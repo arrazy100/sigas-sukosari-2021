@@ -48,7 +48,8 @@
 
                                 <div class="row">
                                     <div class="col-12 mb-4">
-                                        <a href="{{ form_link }}" target="_blank" class="btn btn-block btn-primary">Form Pengumpulan</a>
+                                        <a href="{{ form_link }}" target="_blank" class="btn btn-block btn-primary">Form
+                                            Pengumpulan</a>
                                     </div>
 
                                     <div class="col-12">
@@ -61,12 +62,13 @@
                                 <div class="row row-eq-height list-materi-row">
                                     <div class="col-12 col-sm-8">
                                         <div class="form-group">
-                                            <input type="text" id="table_search" onkeyup="filterTable();" placeholder="Search"
-                                                class="form-control list-materi-btn">
+                                            <input type="text" id="table_search" onkeyup="filterTable();"
+                                                placeholder="Search" class="form-control list-materi-btn">
                                         </div>
                                     </div>
                                     <div class="col mb-4">
-                                        <a href="{% url 'export_nilaisiswa' mapel_id=mapel_id slug=slug %}" class="btn btn-success btn-block list-materi-btn" target="_blank">
+                                        <a href="{% url 'export_nilaisiswa' mapel_id=mapel_id slug=slug %}"
+                                            class="btn btn-success btn-block list-materi-btn" target="_blank">
                                             Export Data
                                         </a>
                                     </div>
@@ -81,7 +83,8 @@
                                 {% include 'layout/template_messages.html' %}
 
                                 <div class="table-responsive">
-                                    <table id="table_siswa" class="w-auto table" style="background-color: white; text-align: center; min-width: 500px;">
+                                    <table id="table_siswa" class="w-auto table"
+                                        style="background-color: white; text-align: center; min-width: 500px;">
                                         <thead>
                                             <tr>
                                                 <th scope="col">No.</th>
@@ -105,20 +108,26 @@
                                                 <td class="align-middle">{{ siswa.student_name }}</td>
                                                 <td class="align-middle">
                                                     <div class="form-group">
-                                                        <input type="number" name="nilai_field" id="id_{{ siswa.id }}" class="form-control" value="{{ siswa.nilai }}" min="0" max="100" data-bind="value:id_{{ siswa.id }}" step=".1">
+                                                        <input type="number" name="nilai_field" id="id_{{ siswa.id }}"
+                                                            class="form-control" value="{{ siswa.nilai }}" min="0"
+                                                            max="100" data-bind="value:id_{{ siswa.id }}" step=".1">
                                                         <input type="hidden" name="nilai_id" value="{{ siswa.id }}">
                                                     </div>
                                                 </td>
                                                 <td class="align-middle">
                                                     <div class="row">
                                                         <div class="col">
-                                                            <a href="{% url 'download_filesiswa' mapel_id=mapel_id slug=slug filesiswa_id=siswa.id %}"><i style="color: green; font-size: 1.4rem;"
+                                                            <a
+                                                                href="{% url 'download_filesiswa' mapel_id=mapel_id slug=slug filesiswa_id=siswa.id %}"><i
+                                                                    style="color: green; font-size: 1.4rem;"
                                                                     class="fas fa-download"></i></a>
                                                         </div>
-                                                        <div class="col" id="trash_filesiswa" data-id="{{ siswa.id }}" data-name="{{ siswa.student_name }}">
-                                                            <a href="#" data-toggle="modal" data-target="#hapusfilesiswa_modal"><i
-                                                                style="color: red; font-size: 1.4rem;"
-                                                                class="fas fa-trash"></i></a>
+                                                        <div class="col" id="trash_filesiswa" data-id="{{ siswa.id }}"
+                                                            data-name="{{ siswa.student_name }}">
+                                                            <a href="#" data-toggle="modal"
+                                                                data-target="#hapusfilesiswa_modal"><i
+                                                                    style="color: red; font-size: 1.4rem;"
+                                                                    class="fas fa-trash"></i></a>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -147,7 +156,8 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header border-bottom-0">
-                                <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">Hapus File Siswa
+                                <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">Hapus File
+                                    Siswa
                                 </h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
@@ -157,7 +167,7 @@
                             <div class="modal-body" id="hapusFileSiswa_message">
                             </div>
                             <div class="modal-footer border-top-0 d-flex justify-content-center">
-                                <div class="col" id="hapusFileSiswa_btn" data-id="0" data-slug="{{ slug }}" data-mapel-id="{{ mapel_id }}">
+                                <div class="col" id="hapusFileSiswa_btn" data-id="0">
                                     <button type="submit" class="btn btn-block btn-success">Hapus</button>
                                 </div>
                                 <div class="col">
@@ -180,5 +190,11 @@
         <!-- End of Page Wrapper -->
 
         {% include 'layout/load_js.html' %}
+        <script>
+            $('#hapusFileSiswa_btn').click(function () {
+                let url = "{% url 'hapus_filesiswa' mapel_id=mapel_id slug=slug filesiswa_id=1 %}".replace(/1/, $(this).data('id'));
+                window.location = url;
+            });
+        </script>
 
         {% endblock %}

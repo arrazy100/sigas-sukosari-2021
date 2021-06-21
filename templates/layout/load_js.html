@@ -53,18 +53,9 @@
     $(document).on('click', '#trash_filesiswa', function () {
         let id = $(this).data('id');
         let name = $(this).data('name');
-        let mapel_id = $(this).data('mapel_id');
-        let slug = $(this).data('slug');
 
         $('#hapusFileSiswa_message').text('Yakin ingin menghapus file ' + name + ' ?');
         $('#hapusFileSiswa_btn').data('id', id);
-    });
-
-    $('#hapusFileSiswa_btn').click(function () {
-        let url = "{% url 'hapus_filesiswa' mapel_id=1 slug='null' filesiswa_id=02 %}".replace(/1/, $(this).data('mapel-id'));
-        url = url.replace(/null/, $(this).data('slug'));
-        url = url.replace(/2/, $(this).data('id'));
-        window.location = url;
     });
 
     function filterTable() {
