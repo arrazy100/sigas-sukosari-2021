@@ -179,7 +179,7 @@ def materiFileSiswa(request, mapel_id = 0, slug = ''):
             updated_filesiswa.nilai = nilai
             updated_filesiswa.save()
 
-            messages.success(request, "Nilai siswa berhasil dirubah")
+        messages.success(request, "Nilai siswa berhasil dirubah")
 
         return redirect("materi_filesiswa", mapel_id = mapel_id, slug = slug)
 
@@ -300,7 +300,8 @@ def formPengumpulan(request, form_hash = ''):
                 for file in files:
                     total_size += file.size
                     if total_size > 5242880:
-                        print(total_size)
+                        messages.error(request, "Maksimal upload file 5 MB")
+                        
                         return redirect('form_pengumpulan', form_hash = form_hash)
 
                 folder_name = str(materi.mapel_id) + '/' + materi.slug

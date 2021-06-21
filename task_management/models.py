@@ -33,7 +33,7 @@ class Materi(models.Model):
     teacher = models.ForeignKey(Teacher, on_delete = models.CASCADE)
     mapel = models.ForeignKey(Mapel, on_delete = models.CASCADE)
     name = models.CharField(max_length = 200)
-    slug = models.SlugField(unique = True)
+    slug = models.SlugField()
     form_hash = models.CharField(max_length = 200)
     token = models.CharField(max_length = 6)
     deadline = models.DateTimeField()
