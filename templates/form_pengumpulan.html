@@ -1,0 +1,79 @@
+{% extends 'layout/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<style>
+    body {
+        background-color: #dfe5eb;
+    }
+</style>
+
+<div class="container-fluid d-flex justify-content-center align-items-center">
+    <div class="row">
+        <div class="col" style="padding: 1em;">
+            <div class="card">
+                <div class="card-header bg-primary">
+                    <h5 class="card-title mb-4" style="color: white; text-align: center; position: relative; top: 50%; transform: translateY(25%); font-weight: bold;">
+                        Form Pengumpulan {{ materi_name }}
+                    </h5>
+                </div>
+                <div class="card-body">
+                    {% include 'layout/template_messages.html' %}
+                    
+                    {% load crispy_forms_tags %}
+
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form | crispy }}
+
+                        <div id="fp"></div>
+
+                        <button type="submit" class="btn btn-block btn-success">Upload</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Page Wrapper -->
+
+{% include 'layout/load_js.html' %}
+
+<script>
+    $(function () {
+        $("#id_deadline").datetimepicker({
+            format: 'd/m/Y H:i',
+        });
+    });
+
+    $('#id_files').change(function () {
+        let fi = document.getElementById('id_files');
+        let total_size = 0.0;
+
+        if (fi.files.length > 0) {
+
+            // THE TOTAL FILE COUNT.
+            document.getElementById('fp').innerHTML =
+                'Total Files: <b>' + fi.files.length + '</b></br >';
+
+            // RUN A LOOP TO CHECK EACH SELECTED FILE.
+            for (let i = 0; i <= fi.files.length - 1; i++) {
+                let fname = fi.files.item(i).name; // THE NAME OF THE FILE.
+                let fsize = fi.files.item(i).size / 1048576; // THE SIZE OF THE FILE.
+
+                total_size += fsize;
+                // if (total_size > 5.0) {
+                //     console.log("Max upload 5 MB");
+                //     fi.value = "";
+                //     fp.innerHTML = "<p style='color: red;'>Maksimal upload 5 MB</p>";
+                // }
+
+                fsize = fsize.toFixed(2);
+            }
+        }
+    });
+</script>
+
+{% endblock %}

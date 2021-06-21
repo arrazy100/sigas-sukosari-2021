@@ -1,0 +1,91 @@
+{% load static %}
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Bootstrap core JavaScript-->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="{% static 'js/sb-admin-2.min.js' %}"></script>
+
+<!-- XDSoft Datepicker-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"
+    integrity="sha256-FEqEelWI3WouFOo2VWP/uJfs1y8KJ++FLh2Lbqc8SJk=" crossorigin="anonymous"></script>
+
+<!-- Modal Events-->
+<script>
+    $(document).on('click', '#trash_btn', function () {
+        let mapel_id = $(this).data('id');
+        let mapel_name = $(this).data('name');
+
+        $('#hapusMapel_message').text('Yakin ingin menghapus mapel ' + mapel_name + ' ?');
+        $('#hapusMapel_btn').data('mapel-id', mapel_id);
+    });
+
+    $('#hapusMapel_btn').click(function () {
+        let url = "{% url 'hapus_mapel' mapel_id=0 %}".replace(/0/, $(this).data('mapel-id'));
+        window.location = url;
+    });
+
+    $(document).on('click', '#materi_trash_btn', function () {
+        let mapel_id = $(this).data('id');
+        let materi_name = $(this).data('name');
+        let slug = $(this).data('slug');
+
+        $('#hapusMateri_message').text('Yakin ingin menghapus materi ' + materi_name + ' ?');
+        $('#hapusMateri_btn').data('mapel-id', mapel_id);
+        $('#hapusMateri_btn').data('slug', slug);
+    });
+
+    $('#hapusMateri_btn').click(function () {
+        let url = "{% url 'hapus_materi' mapel_id=0 slug='null' %}".replace(/0/, $(this).data('mapel-id'));
+        url = url.replace(/null/, $(this).data('slug'))
+        window.location = url;
+    });
+
+    $(document).on('click', '#trash_filesiswa', function () {
+        let id = $(this).data('id');
+        let name = $(this).data('name');
+        let mapel_id = $(this).data('mapel_id');
+        let slug = $(this).data('slug');
+
+        $('#hapusFileSiswa_message').text('Yakin ingin menghapus file ' + name + ' ?');
+        $('#hapusFileSiswa_btn').data('id', id);
+    });
+
+    $('#hapusFileSiswa_btn').click(function () {
+        let url = "{% url 'hapus_filesiswa' mapel_id=1 slug='null' filesiswa_id=02 %}".replace(/1/, $(this).data('mapel-id'));
+        url = url.replace(/null/, $(this).data('slug'));
+        url = url.replace(/2/, $(this).data('id'));
+        window.location = url;
+    });
+
+    function filterTable() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("table_search");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("table_siswa");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>

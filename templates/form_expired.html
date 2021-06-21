@@ -1,0 +1,33 @@
+{% extends 'layout/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<style>
+    body {
+        background-color: #dfe5eb;
+    }
+</style>
+
+<div class="container-fluid d-flex justify-content-center align-items-center">
+    <div class="row">
+        <div class="col" style="padding: 1em;">
+            <div class="card" style="min-width: 250px;">
+                <div class="card-header bg-primary">
+                    <h5 class="card-title mb-4" style="color: white; text-align: center; position: relative; top: 50%; transform: translateY(25%); font-weight: bold;">
+                        Expired
+                    </h5>
+                </div>
+                <div class="card-body">
+                    Mohon maaf, untuk pengumpulan materi ini sudah melewati batas deadline
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Page Wrapper -->
+
+{% include 'layout/load_js.html' %}
+
+{% endblock %}

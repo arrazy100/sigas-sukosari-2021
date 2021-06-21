@@ -1,0 +1,47 @@
+{% load static %}
+
+<!-- Sidebar -->
+<ul class="navbar-nav black sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+      <div class="sidebar-brand-icon">
+        <img class="logo" src="{% static 'img/Logo.png' %}" alt="">
+      </div>
+    </a>
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item {% if request.path == '/' %} active {% endif %}">
+      <a class="nav-link" href="{% url 'index' %}">
+        <i class="fas fa-fw fa-home"></i>
+        <span>Dashboard</span></a>
+    </li>
+
+    <!-- Nav Item - Mapel -->
+    <li class="nav-item {% if request.path == '/mapel' %} active {% endif %}">
+      <a class="nav-link" href="{% url 'mapel' %}">
+        <i class="fas fa-fw fa-book"></i>
+        <span>Mapel</span></a>
+    </li>
+
+    <!-- Nav Item - Pengaturan -->
+    <li class="nav-item {% if request.path == '/pengaturan' %} active {% endif %}">
+      <a class="nav-link" href="{% url 'pengaturan' %}">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Pengaturan</span></a>
+    </li>
+
+    <!-- Nav Item - Logout -->
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'guru_logout' %}">
+        <i class="fas fa-fw fa-door-open"></i>
+        <span>Keluar</span></a>
+    </li>
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+      <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>
+<!-- End of Sidebar -->

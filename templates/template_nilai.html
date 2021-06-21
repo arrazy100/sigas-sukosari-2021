@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ materi_name }}</title>
+    <style>
+        table {
+            padding: 1em;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: left;
+        }
+        .number {
+            text-align: center;
+            width: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="text-align: center; font-size: 3em;">
+        Materi {{ materi_name }}
+    </p>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th class="number">No</th>
+                <th>Nama Siswa</th>
+                <th>Keterangan</th>
+                <th>Nilai</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for file in file_siswa %}
+            <tr>
+                <th class="number">{{ forloop.counter }}</th>
+                <td>{{ file.student_name }}</td>
+                <td><p>{{ file.keterangan }}</p></td>
+                <td>{{ file.nilai }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
