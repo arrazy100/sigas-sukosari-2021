@@ -4,56 +4,134 @@
 
 {% block content %}
 
-  <!-- Page Wrapper -->
-  <div id="wrapper">
+<!-- Page Wrapper -->
+<div id="wrapper">
 
-    {% include 'layout/sidebar.html' %}
+  {% include 'layout/sidebar.html' %}
 
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
+  <!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column">
 
-      <!-- Main Content -->
-      <div id="content">
+    <!-- Main Content -->
+    <div id="content">
 
-        <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-dark black topbar mb-4 static-top shadow">
+      <!-- Topbar -->
+      <nav class="navbar navbar-expand navbar-dark black topbar mb-4 static-top shadow">
 
-          <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-            <i style="color: white;" class="fa fa-bars"></i>
-          </button>
+        <!-- Sidebar Toggle (Topbar) -->
+        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+          <i style="color: white;" class="fa fa-bars"></i>
+        </button>
 
-        </nav>
-        <!-- End of Topbar -->
+      </nav>
+      <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
+      <!-- Begin Page Content -->
+      <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        <!-- Page Heading -->
+        <div class="d-flex align-items-center justify-content-center mb-5">
+          <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        </div>
+
+        <!-- Content Row -->
+        <div class="row d-flex justify-content-center">
+
+          {% include 'layout/template_messages.html' %}
+
+          <!-- Storage Card -->
+          <div class="col-12 col-md-4 mb-4">
+
+            <div class="card border shadow h-100 py-2">
+              <div class="card-body mapel">
+
+                <div style="font-size: 0.9rem; font-weight: bold;">Penyimpanan</div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div class="progress">
+                      <div class="progress-bar" style="width: {{ used_percentage }}%;" role="progressbar"
+                        aria-valuenow="{{ used_percentage }}" aria-valuemin="0" aria-valuemax="100">
+                        {{ used_percentage }}%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6" style="font-size: 0.8rem;">
+                    {{ used }} MB
+                  </div>
+                  <div class="col-6 d-flex justify-content-end" style="font-size: 0.8rem;">
+                    {{ total }} MB
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
 
-          <!-- Content Row -->
-          <div class="row">
+          <!-- Profile Card -->
+          <div class="col-12 col-md-4 mb-4 d-flex justify-content-center">
 
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border shadow w-100 h-100 py-2">
+              <div class="card-body mapel">
 
-              {% include 'layout/template_messages.html' %}
+                <div style="font-size: 0.9rem; font-weight: bold;">
+                  Mengajar
+                </div>
 
-              <div class="card border shadow h-100 py-2">
-                <div class="card-body mapel">
+                {% for mapel in mapels %}
 
-                  <div style="margin-top: 20px;">
-                    <p>Used Space: {{ used_space }} MB</p>
-                    <p>Total Space: {{ total_space }} MB</p>
+                <div style="font-size: 0.9rem">
+                  {{ forloop.counter }}. {{ mapel }}
+                </div>
+
+                {% endfor %}
+
+                <a href="{% url 'mapel' %}" class="mt-5 btn btn-block btn-primary" style="font-size: 0.8rem;">Selengkapnya</a>
+
+              </div>
+            </div>
+
+          </div>
+
+          {% if recent_uploads %}
+
+          <!-- Recent Uploads Card -->
+          <div class="col-12 col-md-4 mb-4 d-flex justify-content-center">
+
+            <div class="card border shadow w-100 h-100 py-2">
+              <div class="card-body mapel">
+
+                <div style="font-size: 0.9rem; font-weight: bold;">
+                  Upload Terakhir
+                </div>
+
+                {% for recent in recent_uploads %}
+
+                <div class="row no-gutters align-items-center">
+
+                  <div class="col-10">
+                    <div style="color: black;" class="text-sm font-weight-bold mb-1">
+                      {{ recent.student_name }}
+                    </div>
+                    <div class="desc" style="font-size: 0.8rem;">{{ recent.uploaded_at }}</div>
+                  </div>
+                  <div class="col-2 d-flex justify-content-end">
+                    <a href="{% url 'materi_filesiswa' mapel_id=recent.materi.mapel.id slug=recent.materi.slug %}"><i style="color: green; font-size: 1.1rem;"
+                        class="fas fa-chevron-right"></i></a>
                   </div>
 
                 </div>
+
+                {% endfor %}
+
               </div>
             </div>
-            
+
+          </div>
+
+          {% endif %}
+
         </div>
         <!-- /.container-fluid -->
 
@@ -70,4 +148,4 @@
 
   {% include 'layout/load_js.html' %}
 
-{% endblock %}
+  {% endblock %}

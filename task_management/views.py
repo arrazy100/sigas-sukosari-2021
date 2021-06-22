@@ -24,6 +24,15 @@ from django.template.loader import get_template
 @login_required(login_url='/guru-login')
 def index(request):
     user_id = request.user.id
+
+    # get teacher
+    teacher = Teacher.objects.get(user_id = user_id)
+
+    # get mapel teached by user id
+    mapels = getMapelTeached(user_id)[:3]
+
+    # get recent uploads
+    recent_uploads = FileSiswa.objects.all().order_by('-uploaded_at')[:5]
     
     # login to pcloud
     pc = loginPcloudWithUserId(user_id)
@@ -36,7 +45,7 @@ def index(request):
         messages.error(request, "PERHATIAN: Penyimpanan hampir habis, segera hapus materi yang tidak terpakai untuk mengosongkan penyimpanan")
 
     # context to pass variable to template view
-    context = {"used_space": used, "total_space": total}
+    context = {'used_percentage': int(used_percentage), 'used': used, 'total': total, 'teacher': teacher, 'mapels': mapels, 'recent_uploads': recent_uploads}
 
     return TemplateResponse(request, 'index.html', context)
 
@@ -167,7 +176,7 @@ def materiFileSiswa(request, mapel_id = 0, slug = ''):
     mapel_name = Mapel.objects.get(id = mapel_id).name
 
     materi_name = materi.name
-    form_link = get_current_site(request).domain + '/form-pengumpulan/' + materi.form_hash
+    form_link = 'http://' + get_current_site(request).domain + '/form-pengumpulan/' + materi.form_hash
     token = materi.token
     share_link = quote(form_link + '%0a%0a' + 'token: ' + token)
     deadline = materi.deadline

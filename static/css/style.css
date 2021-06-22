@@ -54,3 +54,7 @@ input[type=number] {
         display: none;
     }
 }
+
+w-0 {
+    width: 0%;
+}
