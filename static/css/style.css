@@ -44,3 +44,13 @@ input[type=number] {
 .asteriskField {
     color: red;
 }
+
+.share_wa {
+    display: block;
+}
+
+@media all and (min-width: 600px) {
+    .share_wa {
+        display: none;
+    }
+}

@@ -53,22 +53,23 @@
                                 {% for mapel in mapels %}
 
                                 <div class="row no-gutters align-items-center">
-                                    <div class="col-xs-12 col-sm-2">
-                                        <i style="color: #116dff;" class="fas fa-2x fa-language"></i>
-                                    </div>
-                                    <div class="col-8 col-sm-8">
+                                    
+                                    <div class="col-10 px-4">
                                         <div style="color: black;" class="text-sm font-weight-bold mb-1">
                                             {{ mapel.name }}
                                         </div>
                                         <div class="desc">{{ mapel.description }}</div>
                                     </div>
-                                    <div class="col-4 col-sm-2 responsive-mapel-btn">
+                                    <div class="col-2 responsive-mapel-btn">
                                         <a href="{% url 'materi' mapel_id=mapel.id %}"><i style="color: green; font-size: 1.1rem;"
                                                 class="fas fa-folder-open"></i></a>
                                         <a href="#" id="trash_btn" data-toggle="modal" data-target="#hapusmapel_modal" data-id="{{ mapel.id }}" data-name="{{ mapel.name }}"><i style="color: red; font-size: 1.1rem;"
                                             class="fas fa-trash"></i></a>
                                     </div>
+
                                 </div>
+
+                                <hr>
 
                                 {% endfor %}
 

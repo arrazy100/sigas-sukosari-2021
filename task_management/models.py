@@ -45,14 +45,15 @@ class Materi(models.Model):
         # slug
         self.slug = slugify(self.name)
 
-        # random hash link
-        unique_id = str(uuid.uuid4()).replace('-', '')
-        self.form_hash = unique_id
+        if not self.token:
+            # random hash link
+            unique_id = str(uuid.uuid4()).replace('-', '')
+            self.form_hash = unique_id
 
-        # random 6 digit token
-        letters = string.ascii_lowercase
-        rand = ''.join(random.choice(letters) for i in range(6))
-        self.token = rand
+            # random 6 digit token
+            letters = string.ascii_lowercase
+            rand = ''.join(random.choice(letters) for i in range(6))
+            self.token = rand
 
         super(Materi, self).save(*args, **kwargs)
 

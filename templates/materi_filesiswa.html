@@ -29,8 +29,19 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
+                <!-- Back Navigation -->
+                <div class="d-flex align-items-center">
+                    <p>
+                        <a href="{% url 'mapel' %}" style="color: gray;">Mapel</a>
+                        <i class="fa fa-chevron-right"></i>
+                        <a href="{% url 'materi' mapel_id=mapel_id %}" style="color: gray;">{{ mapel_name }}</a>
+                        <i class="fa fa-chevron-right"></i>
+                        <a style="text-decoration: none; color: black;">{{ materi_name }}</a>
+                    </p>
+                </div>
+
                 <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-center mb-4">
+                <div class="d-sm-flex align-items-center justify-content-center mb-5 text-center">
                     <h1 class="h3 mb-0 text-gray-800">Materi {{ materi_name }}</h1>
                 </div>
 
@@ -47,14 +58,19 @@
                                 {% csrf_token %}
 
                                 <div class="row">
-                                    <div class="col-12 mb-4">
-                                        <a href="{{ form_link }}" target="_blank" class="btn btn-block btn-primary">Form
+                                    <div class="col-12 col-sm-6 col-md-12 mb-2">
+                                        <a href="{{ form_link }}" target="_blank" class="btn btn-block btn-primary list-materi-btn">Form
                                             Pengumpulan</a>
                                     </div>
 
+                                    <div class="col share_wa mb-2">
+                                        <a href="whatsapp://send?text={{ share_link }}" class="btn btn-block btn-success list-materi-btn">Share WA <i style="color: white;"
+                                                class="fas fa-share"></i></a>
+                                    </div>
+
                                     <div class="col-12">
-                                        <div class="alert alert-success d-flex justify-content-center" role="alert">
-                                            Token: <b>{{ token }}</b>
+                                        <div class="alert alert-success d-flex justify-content-center list-materi-btn" role="alert">
+                                            <div class="token-title">token: <b>{{ token }}</b></div>
                                         </div>
                                     </div>
                                 </div>
@@ -75,8 +91,8 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col d-flex justify-content-end">
-                                        <p style="color: rgba(255, 255, 255, 0.9);">Deadline: {{ deadline }}</p>
+                                    <div class="col">
+                                        <p style="color: rgba(0, 0, 0, 0.7); font-size: 0.9rem;">Deadline: {{ deadline }}</p>
                                     </div>
                                 </div>
 
@@ -84,7 +100,7 @@
 
                                 <div class="table-responsive">
                                     <table id="table_siswa" class="w-auto table"
-                                        style="background-color: white; text-align: center; min-width: 500px;">
+                                        style="background-color: white; text-align: center; min-width: 570px;">
                                         <thead>
                                             <tr>
                                                 <th scope="col">No.</th>
@@ -94,14 +110,6 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-
-                                            {% if not file_siswa %}
-                                            <tr>
-                                                <td></td>
-                                                <td>Belum ada siswa</td>
-                                            </tr>
-                                            {% endif %}
-
                                             {% for siswa in file_siswa %}
                                             <tr>
                                                 <td scope="row" class="align-middle">{{ forloop.counter }}</th>
@@ -138,7 +146,7 @@
                                 </div>
 
                                 <div class="d-flex mt-2 mb-4 justify-content-end">
-                                    <button class="btn btn-success">Simpan Nilai</button>
+                                    <button class="btn btn-success list-materi-btn">Simpan Nilai</button>
                                 </div>
 
                             </form>
@@ -192,7 +200,7 @@
         {% include 'layout/load_js.html' %}
         <script>
             $('#hapusFileSiswa_btn').click(function () {
-                let url = "{% url 'hapus_filesiswa' mapel_id=mapel_id slug=slug filesiswa_id=1 %}".replace(/1/, $(this).data('id'));
+                let url = "{% url 'hapus_filesiswa' mapel_id=mapel_id slug=slug filesiswa_id=0 %}".replace(/0/, $(this).data('id'));
                 window.location = url;
             });
         </script>

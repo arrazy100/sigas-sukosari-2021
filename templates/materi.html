@@ -29,8 +29,17 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
+                <!-- Back Navigation -->
+                <div class="d-flex align-items-center">
+                    <p>
+                        <a href="{% url 'mapel' %}" style="color: gray;">Mapel</a>
+                        <i class="fa fa-chevron-right"></i>
+                        <a style="text-decoration: none; color: black;">{{ mapel_name }}</a>
+                    </p>
+                </div>
+
                 <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-center mb-4">
+                <div class="d-flex align-items-center justify-content-center mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Materi {{ mapel_name }}</h1>
                 </div>
 
@@ -53,23 +62,26 @@
                                 {% for materi in materis %}
 
                                 <div class="row no-gutters align-items-center">
-                                    <div class="col-xs-12 col-sm-2">
-                                        <i style="color: #116dff;" class="fas fa-2x fa-language"></i>
-                                    </div>
-                                    <div class="col-8 col-sm-8">
+                                    <div class="col-10 px-3">
                                         <div style="color: black;" class="text-sm font-weight-bold mb-1">
                                             {{ materi.name }}
                                         </div>
                                     </div>
-                                    <div class="col-4 col-sm-2 responsive-mapel-btn">
-                                        <a href="{% url 'materi_filesiswa' mapel_id=materi.mapel_id slug=materi.slug %}"><i style="color: green; font-size: 1.1rem;"
+                                    <div class="col-2 responsive-mapel-btn">
+                                        <a
+                                            href="{% url 'materi_filesiswa' mapel_id=materi.mapel_id slug=materi.slug %}"><i
+                                                style="color: green; font-size: 1.1rem;"
                                                 class="fas fa-folder-open"></i></a>
-                                        <a href="{% url 'edit_materi' mapel_id=materi.mapel_id slug=materi.slug %}"><i style="color: blue; font-size: 1.1rem;"
-                                            class="fas fa-edit"></i></a>
-                                        <a href="#" id="materi_trash_btn" data-toggle="modal" data-target="#hapusmateri_modal" data-id="{{ materi.mapel_id }}" data-name="{{ materi.name }}" data-slug="{{ materi.slug }}"><i style="color: red; font-size: 1.1rem;"
-                                            class="fas fa-trash"></i></a>
+                                        <a href="{% url 'edit_materi' mapel_id=materi.mapel_id slug=materi.slug %}"><i
+                                                style="color: blue; font-size: 1.1rem;" class="fas fa-edit"></i></a>
+                                        <a href="#" id="materi_trash_btn" data-toggle="modal"
+                                            data-target="#hapusmateri_modal" data-id="{{ materi.mapel_id }}"
+                                            data-name="{{ materi.name }}" data-slug="{{ materi.slug }}"><i
+                                                style="color: red; font-size: 1.1rem;" class="fas fa-trash"></i></a>
                                     </div>
                                 </div>
+                                
+                                <hr>
 
                                 {% endfor %}
 
@@ -121,18 +133,20 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        
+
                         <div class="modal-body" id="hapusMateri_message">
                         </div>
                         <div class="modal-footer border-top-0 d-flex justify-content-center">
                             <div class="col">
-                                <button type="submit" id="hapusMateri_btn" class="btn btn-block btn-success" data-mapel-id="0" data-slug="a">Hapus</button>
+                                <button type="submit" id="hapusMateri_btn" class="btn btn-block btn-success"
+                                    data-mapel-id="0" data-slug="a">Hapus</button>
                             </div>
                             <div class="col">
-                                <button type="button" class="btn btn-block btn-danger" data-dismiss="modal">Batal</button>
+                                <button type="button" class="btn btn-block btn-danger"
+                                    data-dismiss="modal">Batal</button>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>

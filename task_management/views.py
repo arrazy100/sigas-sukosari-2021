@@ -9,6 +9,7 @@ from django.contrib.auth import authenticate, logout
 from django.contrib.auth import login as django_login
 from django.contrib.auth.decorators import login_required
 from django.template.response import TemplateResponse
+from urllib.parse import quote
 from .pcloud_api import login as pcloud_login
 from .controllers import *
 from .forms import *
@@ -162,9 +163,13 @@ def materiFileSiswa(request, mapel_id = 0, slug = ''):
     # get materi
     materi = Materi.objects.get(mapel_id = mapel_id, slug = slug)
 
+    # get mapel name
+    mapel_name = Mapel.objects.get(id = mapel_id).name
+
     materi_name = materi.name
-    form_link = 'http://' + get_current_site(request).domain + '/form-pengumpulan/' + materi.form_hash
+    form_link = get_current_site(request).domain + '/form-pengumpulan/' + materi.form_hash
     token = materi.token
+    share_link = quote(form_link + '%0a%0a' + 'token: ' + token)
     deadline = materi.deadline
 
     # get file siswa
@@ -184,7 +189,7 @@ def materiFileSiswa(request, mapel_id = 0, slug = ''):
         return redirect("materi_filesiswa", mapel_id = mapel_id, slug = slug)
 
     # context to pass variable to template view
-    context = {'file_siswa': file_siswa, 'materi_name': materi_name, 'form_link': form_link, 'token': token, 'deadline': deadline, 'mapel_id': mapel_id, 'slug': slug}
+    context = {'file_siswa': file_siswa, 'materi_name': materi_name, 'form_link': form_link, 'token': token, 'deadline': deadline, 'mapel_id': mapel_id, 'slug': slug, 'share_link': share_link, 'mapel_name': mapel_name}
 
     return TemplateResponse(request, 'materi_filesiswa.html', context)
 
@@ -282,36 +287,51 @@ def formPengumpulan(request, form_hash = ''):
     teacher = Teacher.objects.get(id = materi.teacher_id)
     user_id = User.objects.get(id = teacher.user_id)
 
-    # link expired
+    # form expired response
+    expired_response = redirect("form_expired")
+
+    # form pengumpulan response
+    pengumpulan_response = redirect("form_pengumpulan", form_hash = form_hash)
+
+    # redirect to form_expired if time > deadline
     if (timezone.now() > materi.deadline):
-        return redirect("form_expired")
+        return expired_response
 
     if (request.method == "POST"):
         form = SiswaForm(request.POST, request.FILES)
 
         if form.is_valid():
+            # don't submit if time > deadline
+            if (timezone.now() > materi.deadline):
+                return expired_response
+            
             token = form.cleaned_data['token']
+
+            # if inputted token is correct
             if (token == materi.token):
                 name = form.cleaned_data['student_name']
                 keterangan = form.cleaned_data['keterangan']
                 files = request.FILES.getlist('files')
 
                 total_size = 0
+
+                # get total file size, if > 5 MB return error messages
                 for file in files:
                     total_size += file.size
                     if total_size > 5242880:
                         messages.error(request, "Maksimal upload file 5 MB")
                         
-                        return redirect('form_pengumpulan', form_hash = form_hash)
+                        return pengumpulan_response
 
                 folder_name = str(materi.mapel_id) + '/' + materi.slug
                 file_name = slugify(name) + '.zip'
 
+                # check siswa with name exists in database
                 try:
                     filesiswa_exists = FileSiswa.objects.get(filename = file_name, materi_id = materi.id)
                     messages.error(request, "Siswa atas nama " + name + " sudah mengumpulkan tugas")
 
-                    return redirect("form_pengumpulan", form_hash = form_hash)
+                    return pengumpulan_response
                 except:
                     pass
 
