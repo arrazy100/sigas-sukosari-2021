@@ -3,18 +3,36 @@ from .models import *
 from .pcloud_api import login, usedSpace, uploadFiles, downloadFile
 
 def getTeacherFromUserId(user_id):
-    teacher = Teacher.objects.get(user_id = user_id)
+    try:
+        teacher = Teacher.objects.get(user_id = user_id)
 
-    return teacher
+        return teacher
+    except Teacher.DoesNotExist:
+        pass
 
 def loginPcloudWithUserId(user_id):
     # get teacher with user id
     teacher = getTeacherFromUserId(user_id)
 
     # login to pcloud
-    pc = login(teacher.pcloud_username, teacher.pcloud_password)
+    if teacher is not None:
+        pc = login(teacher.pcloud_username, teacher.pcloud_password)
 
-    return pc
+        return pc
+
+def canUpload(user_id, upload_size):
+    # login to pcloud
+    pc = loginPcloudWithUserId(user_id)
+
+    # check space
+    [used, total] = usedSpace(pc)
+    byte_to_mb = 1 / 1048576
+    upload_size = round(upload_size * byte_to_mb, 1)
+
+    if (upload_size + used) > total:
+        return False
+    else:
+        return True
 
 def getMapelNotTeached(user_id):
     # get teacher with user id
@@ -66,7 +84,7 @@ def unduhFile(filesiswa_id):
     # get file siswa
     file_siswa = FileSiswa.objects.get(id = filesiswa_id)
     filename = file_siswa.filename
-    
+
     # get mapel id and slug
     materi = Materi.objects.get(id = file_siswa.materi_id)
     mapel_id = materi.mapel_id
@@ -83,11 +101,13 @@ def unduhFile(filesiswa_id):
 
     return [file_, filename]
 
-def clearLoadedMessages(request):
-    storage = messages.get_messages(request)
+def unduhArchive(user_id, mapel_id, slug):
+    # login
+    pc = loginPcloudWithUserId(user_id)
 
-    for _ in storage:
-        pass
+    filename = slug + '.zip'
 
-    for _ in list(storage._loaded_messages):
-        del storage._loaded_messages[0]
+    # open file
+    file_ = downloadFile(pc, str(mapel_id), filename)
+
+    return [file_, filename]

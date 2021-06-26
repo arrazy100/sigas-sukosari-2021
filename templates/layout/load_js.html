@@ -21,7 +21,7 @@
 
 <!-- Modal Events-->
 <script>
-    $(document).on('click', '#trash_btn', function () {
+    $(document).on('click', '#trash_btn', function (event) {
         let mapel_id = $(this).data('id');
         let mapel_name = $(this).data('name');
 
@@ -30,6 +30,8 @@
     });
 
     $('#hapusMapel_btn').click(function () {
+        $("#hapusMapel_btn").attr("disabled", true);
+        $("#hapusMapel_btn").text("Sedang menghapus...");
         let url = "{% url 'hapus_mapel' mapel_id=0 %}".replace(/0/, $(this).data('mapel-id'));
         window.location = url;
     });
@@ -45,6 +47,8 @@
     });
 
     $('#hapusMateri_btn').click(function () {
+        $("#hapusMateri_btn").attr("disabled", true);
+        $("#hapusMateri_btn").text("Sedang menghapus...");
         let url = "{% url 'hapus_materi' mapel_id=0 slug='null' %}".replace(/0/, $(this).data('mapel-id'));
         url = url.replace(/null/, $(this).data('slug'))
         window.location = url;

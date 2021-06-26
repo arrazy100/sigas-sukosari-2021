@@ -40,7 +40,7 @@
           {% include 'layout/template_messages.html' %}
 
           <!-- Storage Card -->
-          <div class="col-12 col-md-4 mb-4">
+          <div class="col-12 col-md-4 mb-4 order-last">
 
             <div class="card border shadow h-100 py-2">
               <div class="card-body mapel">
@@ -81,8 +81,19 @@
 
                 {% for mapel in mapels %}
 
-                <div style="font-size: 0.9rem">
-                  {{ forloop.counter }}. {{ mapel }}
+                <div class="row no-gutters align-items-center" onclick="location.href='{% url "materi" mapel_id=mapel.id %}';" style="cursor: pointer;">
+
+                  <div class="col-10">
+                    <div style="color: black;" class="text-sm font-weight-bold mb-1">
+                      {{ mapel.name }}
+                    </div>
+                    <div class="desc" style="font-size: 0.8rem;">{{ mapel.description }}</div>
+                  </div>
+                  <div class="col-2 d-flex justify-content-end">
+                    <a href="{% url 'materi' mapel_id=mapel.id %}"><i style="color: green; font-size: 1.1rem;"
+                        class="fas fa-chevron-right"></i></a>
+                  </div>
+
                 </div>
 
                 {% endfor %}
@@ -108,7 +119,7 @@
 
                 {% for recent in recent_uploads %}
 
-                <div class="row no-gutters align-items-center">
+                <div class="row no-gutters align-items-center" onclick="location.href='{% url "materi_filesiswa" mapel_id=recent.materi.mapel.id slug=recent.materi.slug %}';" style="cursor: pointer;">
 
                   <div class="col-10">
                     <div style="color: black;" class="text-sm font-weight-bold mb-1">

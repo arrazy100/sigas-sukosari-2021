@@ -11,10 +11,11 @@ from django.contrib.auth.decorators import login_required
 from django.template.response import TemplateResponse
 from urllib.parse import quote
 from .pcloud_api import login as pcloud_login
+from .pcloud_api import createArchive, getArchiveProgress, folderSize
 from .controllers import *
 from .forms import *
 from .models import *
-import pytz, io
+import pytz, io, uuid
 
 from io import BytesIO
 from xhtml2pdf import pisa
@@ -31,9 +32,12 @@ def index(request):
     # get mapel teached by user id
     mapels = getMapelTeached(user_id)[:3]
 
+    # get materi
+    materi = [m.id for m in Materi.objects.filter(teacher_id = teacher.id)]
+
     # get recent uploads
-    recent_uploads = FileSiswa.objects.all().order_by('-uploaded_at')[:5]
-    
+    recent_uploads = FileSiswa.objects.filter(materi_id__in = materi).order_by('-uploaded_at')[:5]
+
     # login to pcloud
     pc = loginPcloudWithUserId(user_id)
 
@@ -52,7 +56,7 @@ def index(request):
 @login_required(login_url='/guru-login')
 def mapel(request):
     user_id = request.user.id
-    
+
     # get mapel teached by user id
     mapels = getMapelTeached(user_id)
 
@@ -71,7 +75,7 @@ def mapel(request):
             messages.success(request, "Mata pelajaran " + m.mapel.name + " berhasil ditambahkan")
 
             return redirect("mapel")
-    
+
     else:
         form = TambahMapelForm()
         form.fields['mapel'].choices = mapels_not_teached
@@ -92,13 +96,13 @@ def hapusMapel(request, mapel_id = 0):
     mengajar.delete()
 
     messages.success(request, "Mata pelajaran " + mapel_name + " berhasil dihapus")
-    
+
     return redirect("mapel")
 
 @login_required(login_url='/guru-login')
 def materi(request, mapel_id = 0):
     user_id = request.user.id
-    
+
     # get materis
     materis = getMateris(user_id, mapel_id)
 
@@ -119,7 +123,7 @@ def materi(request, mapel_id = 0):
                 messages.success(request, "Materi " + materi + " berhasil ditambahkan")
 
             return redirect("materi", mapel_id = mapel_id)
-    
+
     else:
         tambah_form = MateriForm()
 
@@ -131,7 +135,7 @@ def materi(request, mapel_id = 0):
 @login_required(login_url='/guru-login')
 def editMateri(request, mapel_id = 0, slug = ''):
     user_id = request.user.id
-    
+
     # get materi
     materi = Materi.objects.get(mapel_id = mapel_id, slug = slug, teacher_id = getTeacherFromUserId(user_id))
 
@@ -144,7 +148,7 @@ def editMateri(request, mapel_id = 0, slug = ''):
             form.save()
 
             return redirect("materi", mapel_id = mapel_id)
-    
+
     else:
         form = MateriForm(instance = materi)
 
@@ -164,22 +168,49 @@ def hapusMateri(request, mapel_id = 0, slug = ''):
     materi.delete()
 
     messages.success(request, "Materi " + materi_name + " berhasil dihapus")
-    
+
     return redirect("materi", mapel_id = mapel_id)
 
 @login_required(login_url='/guru-login')
 def materiFileSiswa(request, mapel_id = 0, slug = ''):
+    user_id = request.user.id
+
+    # get teacher
+    teacher = Teacher.objects.get(user_id = user_id)
+
     # get materi
-    materi = Materi.objects.get(mapel_id = mapel_id, slug = slug)
+    materi = Materi.objects.get(teacher_id = teacher.id, mapel_id = mapel_id, slug = slug)
 
     # get mapel name
     mapel_name = Mapel.objects.get(id = mapel_id).name
 
+    # parameter
     materi_name = materi.name
     form_link = 'http://' + get_current_site(request).domain + '/form-pengumpulan/' + materi.form_hash
     token = materi.token
-    share_link = quote(form_link + '%0a%0a' + 'token: ' + token)
+    share_link = '*Form Pengumpulan ' + materi_name + '*%0a%0a' + quote(form_link) + '%0a%0a' + 'token: ' + token
     deadline = materi.deadline
+
+    # is archiving?
+    is_archive = False
+    archiving = True
+    try:
+        archive = ArchiveMateri.objects.get(materi_id = materi.id)
+
+        # done archiving?
+        h = archive.progresshash
+        pc = loginPcloudWithUserId(user_id)
+        status = getArchiveProgress(pc, h)
+
+        if status["result"] == 0:
+            if status["bytes"] / status["totalbytes"] == 1:
+                archiving = False
+            else:
+                archiving = True
+
+            is_archive = True
+    except:
+        pass
 
     # get file siswa
     file_siswa = FileSiswa.objects.filter(materi_id = materi.id)
@@ -198,7 +229,7 @@ def materiFileSiswa(request, mapel_id = 0, slug = ''):
         return redirect("materi_filesiswa", mapel_id = mapel_id, slug = slug)
 
     # context to pass variable to template view
-    context = {'file_siswa': file_siswa, 'materi_name': materi_name, 'form_link': form_link, 'token': token, 'deadline': deadline, 'mapel_id': mapel_id, 'slug': slug, 'share_link': share_link, 'mapel_name': mapel_name}
+    context = {'file_siswa': file_siswa, 'materi_name': materi_name, 'form_link': form_link, 'token': token, 'deadline': deadline, 'mapel_id': mapel_id, 'slug': slug, 'share_link': share_link, 'mapel_name': mapel_name, 'is_archive': is_archive, 'archiving': archiving}
 
     return TemplateResponse(request, 'materi_filesiswa.html', context)
 
@@ -213,23 +244,95 @@ def hapusFileSiswa(request, mapel_id = 0, filesiswa_id = 0, slug = ''):
     file_siswa.delete()
 
     messages.success(request, "File siswa dengan nama " + student_name + " berhasil dihapus")
-    
+
     return redirect("materi_filesiswa", mapel_id = mapel_id, slug = slug)
 
 @login_required(login_url='/guru-login')
 def downloadFileSiswa(request, filesiswa_id = 0, mapel_id = 0, slug = ''):
     # get file
     [file_, filename] = unduhFile(filesiswa_id)
-    
+
     response = HttpResponse(file_, content_type='application/zip')
     response['Content-Disposition'] = 'attachment; filename="' + filename + '"'
-    
+
+    return response
+
+@login_required(login_url='/guru-login')
+def archiveMateri(request, mapel_id = 0, slug = ''):
+    user_id = request.user.id
+
+    # login to pcloud
+    pc = loginPcloudWithUserId(user_id)
+
+    # archive parameter
+    folder_path = '/' + str(mapel_id) + '/' + slug
+    dest = '/' + str(mapel_id) + '/'
+    file_name = slug + '.zip'
+    h = str(uuid.uuid4()).replace('-', '')
+
+    # get teacher
+    teacher = Teacher.objects.get(user_id = user_id)
+
+    # get materi
+    materi = Materi.objects.get(teacher_id = teacher.id, mapel_id = mapel_id, slug = slug)
+
+    # check quota
+    pc = loginPcloudWithUserId(user_id)
+    [used, total] = usedSpace(pc)
+    folder_size = folderSize(pc, folder_path)
+    print("folder size + used:", folder_size + used)
+    print("used:", used)
+    print("total:", total)
+    if folder_size + used > total:
+        messages.error(request, "Penyimpanan tidak cukup, gagal membuat archive")
+
+        return redirect("materi_filesiswa", mapel_id = mapel_id, slug = slug)
+
+    # save to database
+    m = ArchiveMateri(materi = materi, progresshash = h)
+    m.save()
+
+    # create archive to pcloud
+    createArchive(pc, folder_path, dest, file_name, h)
+
+    return redirect("materi_filesiswa", mapel_id = mapel_id, slug = slug)
+
+@login_required(login_url='/guru-login')
+def deleteArchiveMateri(request, mapel_id = 0, slug = ''):
+    user_id = request.user.id
+
+    # get teacher
+    teacher = Teacher.objects.get(user_id = user_id)
+
+    # get materi
+    materi = Materi.objects.get(teacher_id = teacher.id, mapel_id = mapel_id, slug = slug)
+
+    archive_materi = ArchiveMateri.objects.get(materi_id = materi.id)
+    archive_materi.delete()
+
+    messages.success(request, "Archive berhasil dihapus")
+
+    return redirect("materi_filesiswa", mapel_id = mapel_id, slug = slug)
+
+@login_required(login_url='/guru-login')
+def downloadArchiveMateri(request, mapel_id = 0, slug = ''):
+    # get file
+    [file_, filename] = unduhArchive(request.user.id, mapel_id, slug)
+
+    response = HttpResponse(file_, content_type='application/zip')
+    response['Content-Disposition'] = 'attachment; filename="' + filename + '"'
+
     return response
 
 @login_required(login_url='/guru-login')
 def exportNilaiSiswa(request, mapel_id = 0, slug = ''):
+    user_id = request.user.id
+
+    # get teacher
+    teacher = Teacher.objects.get(user_id = user_id)
+
     # get materi
-    materi = Materi.objects.get(mapel_id = mapel_id, slug = slug)
+    materi = Materi.objects.get(teacher_id = teacher.id, mapel_id = mapel_id, slug = slug)
 
     # get file siswa
     file_siswa = FileSiswa.objects.filter(materi_id = materi.id)
@@ -278,7 +381,7 @@ def pengaturan(request):
             teacher.save()
 
             return redirect("pengaturan")
-    
+
     else:
         form = PcloudForm(initial={'pcloud_username': teacher.pcloud_username, 'pcloud_password': teacher.pcloud_password})
 
@@ -313,7 +416,7 @@ def formPengumpulan(request, form_hash = ''):
             # don't submit if time > deadline
             if (timezone.now() > materi.deadline):
                 return expired_response
-            
+
             token = form.cleaned_data['token']
 
             # if inputted token is correct
@@ -321,16 +424,23 @@ def formPengumpulan(request, form_hash = ''):
                 name = form.cleaned_data['student_name']
                 keterangan = form.cleaned_data['keterangan']
                 files = request.FILES.getlist('files')
+                uploaded_at = timezone.now()
 
                 total_size = 0
 
                 # get total file size, if > 5 MB return error messages
                 for file in files:
                     total_size += file.size
+
                     if total_size > 5242880:
                         messages.error(request, "Maksimal upload file 5 MB")
-                        
+
                         return pengumpulan_response
+
+                if not canUpload(user_id, total_size):
+                    messages.error(request, "Penyimpanan sistem penuh, tidak bisa upload")
+
+                    return pengumpulan_response
 
                 folder_name = str(materi.mapel_id) + '/' + materi.slug
                 file_name = slugify(name) + '.zip'
@@ -345,14 +455,14 @@ def formPengumpulan(request, form_hash = ''):
                     pass
 
                 uploadMateriFiles(user_id, folder_name, files, file_name)
-                
-                filesiswa = FileSiswa(materi = materi, student_name = name, keterangan = keterangan, filename = file_name)
+
+                filesiswa = FileSiswa(materi = materi, student_name = name, keterangan = keterangan, filename = file_name, uploaded_at = uploaded_at)
                 filesiswa.save()
 
                 return redirect("form_terimakasih")
 
             return redirect("form_pengumpulan", form_hash = form_hash)
-    
+
     else:
         form = SiswaForm()
 
@@ -375,7 +485,7 @@ def expired(request):
 
 def guruLogin(request):
     if request.user.is_authenticated:
-        return redirect("index")
+        logout(request)
 
     if (request.method == "POST"):
         form = GuruLoginForm(request.POST)
@@ -392,13 +502,13 @@ def guruLogin(request):
 
                 if next_url:
                     return redirect(next_url)
-                
+
                 return redirect('index')
             else:
                 messages.error(request, "Username/ password salah")
 
                 return redirect('guru_login')
-    
+
     else:
         form = GuruLoginForm()
 

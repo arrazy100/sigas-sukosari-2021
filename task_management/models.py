@@ -62,8 +62,15 @@ class FileSiswa(models.Model):
     student_name = models.CharField(max_length = 200)
     keterangan = models.TextField()
     filename = models.CharField(max_length = 200)
-    uploaded_at = models.DateTimeField(default = timezone.now())
+    uploaded_at = models.DateTimeField()
     nilai = models.FloatField(default = 0, validators=[MinValueValidator(0), MaxValueValidator(100)])
 
     def __str__(self):
         return self.student_name
+
+class ArchiveMateri(models.Model):
+    materi = models.ForeignKey(Materi, on_delete = models.CASCADE)
+    progresshash = models.CharField(max_length = 200)
+
+    def __str__(self):
+        return self.materi.name

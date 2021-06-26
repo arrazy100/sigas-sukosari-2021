@@ -21,16 +21,16 @@
                 </div>
                 <div class="card-body">
                     {% include 'layout/template_messages.html' %}
-                    
+
                     {% load crispy_forms_tags %}
 
-                    <form method="post" enctype="multipart/form-data">
+                    <form id="upload_form" method="post" enctype="multipart/form-data">
                         {% csrf_token %}
                         {{ form | crispy }}
 
                         <div id="fp"></div>
 
-                        <button type="submit" class="btn btn-block btn-success">Upload</button>
+                        <button id="upload_btn" type="submit" class="btn btn-block btn-success">Upload</button>
                     </form>
                 </div>
             </div>
@@ -45,6 +45,11 @@
     $(function () {
         $("#id_deadline").datetimepicker({
             format: 'd/m/Y H:i',
+        });
+
+        $("#upload_form").submit(function() {
+            $("#upload_btn").attr("disabled", true);
+            $("#upload_btn").text("Sedang mengupload...");
         });
     });
 

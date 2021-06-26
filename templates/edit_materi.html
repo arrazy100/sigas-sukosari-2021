@@ -36,11 +36,11 @@
 
                 {% load crispy_forms_tags %}
 
-                <form method="post">
+                <form id="edit_form" method="post">
                     {% csrf_token %}
                     {{ form | crispy }}
-                    
-                    <button type="submit" class="btn btn-block btn-success">Simpan</button>
+
+                    <button id="edit_btn" type="submit" class="btn btn-block btn-success">Simpan</button>
                 </form>
 
             </div>
@@ -61,6 +61,11 @@
             $("#id_deadline").datetimepicker({
                 format: 'd/m/Y H:i',
             });
+        });
+
+        $("#edit_form").submit(function() {
+            $("#edit_btn").attr("disabled", true);
+            $("#edit_btn").text("Sedang menyimpan...");
         });
     </script>
 

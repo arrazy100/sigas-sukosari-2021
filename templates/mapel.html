@@ -53,7 +53,7 @@
                                 {% for mapel in mapels %}
 
                                 <div class="row no-gutters align-items-center">
-                                    
+
                                     <div class="col-8 col-sm-10">
                                         <div style="color: black;" class="text-sm font-weight-bold mb-1">
                                             {{ mapel.name }}
@@ -96,13 +96,13 @@
 
                         {% load crispy_forms_tags %}
 
-                        <form method="post">
+                        <form id="tambah_form" method="post">
                             <div class="modal-body">
                                 {% csrf_token %}
                                 {{ form | crispy }}
                             </div>
                             <div class="modal-footer border-top-0 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-block btn-success">Simpan</button>
+                                <button id="tambah_btn" type="submit" class="btn btn-block btn-success">Simpan</button>
                             </div>
                         </form>
                     </div>
@@ -121,7 +121,7 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        
+
                         <div class="modal-body" id="hapusMapel_message">
                         </div>
                         <div class="modal-footer border-top-0 d-flex justify-content-center">
@@ -132,7 +132,7 @@
                                 <button type="button" class="btn btn-block btn-danger" data-dismiss="modal">Batal</button>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -147,5 +147,18 @@
     <!-- End of Page Wrapper -->
 
     {% include 'layout/load_js.html' %}
+
+    <script>
+    $(function () {
+        $("#id_deadline").datetimepicker({
+            format: 'd/m/Y H:i',
+        });
+
+        $("#tambah_form").submit(function() {
+            $("#tambah_btn").attr("disabled", true);
+            $("#tambah_btn").text("Sedang menyimpan...");
+        });
+    });
+    </script>
 
     {% endblock %}

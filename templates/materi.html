@@ -80,7 +80,7 @@
                                                 style="color: red; font-size: 1.1rem;" class="fas fa-trash"></i></a>
                                     </div>
                                 </div>
-                                
+
                                 <hr>
 
                                 {% endfor %}
@@ -108,13 +108,13 @@
 
                         {% load crispy_forms_tags %}
 
-                        <form method="post">
+                        <form id="tambah_form" method="post">
                             <div class="modal-body">
                                 {% csrf_token %}
                                 {{ tambah_form | crispy }}
                             </div>
                             <div class="modal-footer border-top-0 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-block btn-success">Simpan</button>
+                                <button id="tambah_btn" type="submit" class="btn btn-block btn-success">Simpan</button>
                             </div>
                         </form>
                     </div>
@@ -166,6 +166,11 @@
         $(function () {
             $("#id_deadline").datetimepicker({
                 format: 'd/m/Y H:i',
+            });
+
+            $("#tambah_form").submit(function() {
+                $("#tambah_btn").attr("disabled", true);
+                $("#tambah_btn").text("Sedang menyimpan...");
             });
         });
     </script>

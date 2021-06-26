@@ -1,0 +1,4733 @@
+[
+{
+  "model": "task_management.mapel",
+  "pk": 1,
+  "fields": {
+    "name": "Matematika 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 2,
+  "fields": {
+    "name": "Matematika 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 4,
+  "fields": {
+    "name": "Matematika 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 5,
+  "fields": {
+    "name": "Al Quran Hadits 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 6,
+  "fields": {
+    "name": "Al Quran Hadits 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 7,
+  "fields": {
+    "name": "Al Quran Hadits 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 8,
+  "fields": {
+    "name": "Pendidikan Pancasila dan Kewarganegaraan 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 9,
+  "fields": {
+    "name": "Pendidikan Pancasila dan Kewarganegaraan 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 10,
+  "fields": {
+    "name": "Pendidikan Pancasila dan Kewarganegaraan 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 11,
+  "fields": {
+    "name": "Bahasa Indonesia 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 12,
+  "fields": {
+    "name": "Bahasa Indonesia 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 13,
+  "fields": {
+    "name": "Bahasa Indonesia 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 14,
+  "fields": {
+    "name": "Bahasa Arab 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 15,
+  "fields": {
+    "name": "Bahasa Arab 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 16,
+  "fields": {
+    "name": "Bahasa Arab 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 17,
+  "fields": {
+    "name": "Ilmu Pengetahuan Alam 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 18,
+  "fields": {
+    "name": "Ilmu Pengetahuan Alam 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 19,
+  "fields": {
+    "name": "Ilmu Pengetahuan Alam 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 20,
+  "fields": {
+    "name": "Ilmu Pengetahuan Sosial 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 21,
+  "fields": {
+    "name": "Ilmu Pengetahuan Sosial 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 22,
+  "fields": {
+    "name": "Ilmu Pengetahuan Sosial 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 23,
+  "fields": {
+    "name": "Bahasa Inggris 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 24,
+  "fields": {
+    "name": "Bahasa Inggris 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 25,
+  "fields": {
+    "name": "Bahasa Inggris 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 26,
+  "fields": {
+    "name": "Seni Budaya 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 27,
+  "fields": {
+    "name": "Seni Budaya 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 28,
+  "fields": {
+    "name": "Seni Budaya 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 29,
+  "fields": {
+    "name": "Pendidikan Jasmani dan Olahraga 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 30,
+  "fields": {
+    "name": "Pendidikan Jasmani dan Olahraga 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 31,
+  "fields": {
+    "name": "Pendidikan Jasmani dan Olahraga 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 32,
+  "fields": {
+    "name": "Prakarya 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 33,
+  "fields": {
+    "name": "Prakarya 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 34,
+  "fields": {
+    "name": "Prakarya 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 35,
+  "fields": {
+    "name": "Bahasa Daerah 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 36,
+  "fields": {
+    "name": "Bahasa Daerah 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 37,
+  "fields": {
+    "name": "Bahasa Daerah 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 38,
+  "fields": {
+    "name": "Aswaja 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 39,
+  "fields": {
+    "name": "Aswaja 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 40,
+  "fields": {
+    "name": "Aswaja 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 41,
+  "fields": {
+    "name": "Akidah Akhlak 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 42,
+  "fields": {
+    "name": "Akidah Akhlak 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 43,
+  "fields": {
+    "name": "Akidah Akhlak 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 44,
+  "fields": {
+    "name": "FIkih 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 45,
+  "fields": {
+    "name": "Fikih 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 46,
+  "fields": {
+    "name": "Fikih 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 47,
+  "fields": {
+    "name": "Ski 7",
+    "description": "Kelas 1 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 48,
+  "fields": {
+    "name": "Ski 8",
+    "description": "Kelas 2 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mapel",
+  "pk": 49,
+  "fields": {
+    "name": "Ski 9",
+    "description": "Kelas 3 SMP/MTS"
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 53,
+  "fields": {
+    "teacher": 20,
+    "mapel": 13
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 54,
+  "fields": {
+    "teacher": 20,
+    "mapel": 1
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 55,
+  "fields": {
+    "teacher": 23,
+    "mapel": 32
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 56,
+  "fields": {
+    "teacher": 21,
+    "mapel": 9
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 57,
+  "fields": {
+    "teacher": 23,
+    "mapel": 33
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 58,
+  "fields": {
+    "teacher": 20,
+    "mapel": 17
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 59,
+  "fields": {
+    "teacher": 23,
+    "mapel": 34
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 61,
+  "fields": {
+    "teacher": 22,
+    "mapel": 11
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 62,
+  "fields": {
+    "teacher": 2,
+    "mapel": 18
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 63,
+  "fields": {
+    "teacher": 2,
+    "mapel": 1
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 64,
+  "fields": {
+    "teacher": 20,
+    "mapel": 5
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 65,
+  "fields": {
+    "teacher": 2,
+    "mapel": 17
+  }
+},
+{
+  "model": "task_management.mengajar",
+  "pk": 66,
+  "fields": {
+    "teacher": 2,
+    "mapel": 19
+  }
+},
+{
+  "model": "task_management.materi",
+  "pk": 34,
+  "fields": {
+    "teacher": 20,
+    "mapel": 1,
+    "name": "Aloritma",
+    "slug": "aloritma",
+    "form_hash": "891275c08da84934b793f829d3180e1e",
+    "token": "yopauw",
+    "deadline": "2021-06-24T11:00:00"
+  }
+},
+{
+  "model": "task_management.materi",
+  "pk": 36,
+  "fields": {
+    "teacher": 20,
+    "mapel": 13,
+    "name": "Mendeskripsikan Kata",
+    "slug": "mendeskripsikan-kata",
+    "form_hash": "38b9aecb2ef845d682c543b856727689",
+    "token": "aayanr",
+    "deadline": "2021-06-26T15:00:00"
+  }
+},
+{
+  "model": "task_management.materi",
+  "pk": 37,
+  "fields": {
+    "teacher": 21,
+    "mapel": 9,
+    "name": "Sumpah pemuda",
+    "slug": "sumpah-pemuda",
+    "form_hash": "75624cde900b4d3cba9d6efcdcd420d0",
+    "token": "eoanwr",
+    "deadline": "2021-06-24T15:00:00"
+  }
+},
+{
+  "model": "task_management.materi",
+  "pk": 39,
+  "fields": {
+    "teacher": 22,
+    "mapel": 11,
+    "name": "Puisi Rakyat",
+    "slug": "puisi-rakyat",
+    "form_hash": "11b57577e84a43948443d0360c8e0488",
+    "token": "fxnviq",
+    "deadline": "2021-06-24T14:00:00"
+  }
+},
+{
+  "model": "task_management.materi",
+  "pk": 41,
+  "fields": {
+    "teacher": 20,
+    "mapel": 17,
+    "name": "Perpindahan kalor",
+    "slug": "perpindahan-kalor",
+    "form_hash": "97e636f0f0c1457aba4ce98742acf5a9",
+    "token": "gufhub",
+    "deadline": "2021-06-29T14:00:00"
+  }
+},
+{
+  "model": "task_management.filesiswa",
+  "pk": 43,
+  "fields": {
+    "materi": 39,
+    "student_name": "Faiqoturrohmah",
+    "keterangan": "Limbah bahan lunak adalah  bahan yang mudah terurai oleh bakteri",
+    "filename": "faiqoturrohmah.zip",
+    "uploaded_at": "2021-06-24T05:44:22.806",
+    "nilai": 80.0
+  }
+},
+{
+  "model": "task_management.filesiswa",
+  "pk": 44,
+  "fields": {
+    "materi": 41,
+    "student_name": "Ummu",
+    "keterangan": "Mengumpulkan tugas Ilmu Pengetahuan Alam",
+    "filename": "ummu.zip",
+    "uploaded_at": "2021-06-24T05:44:22.806",
+    "nilai": 100.0
+  }
+},
+{
+  "model": "task_management.filesiswa",
+  "pk": 45,
+  "fields": {
+    "materi": 37,
+    "student_name": "Lilik",
+    "keterangan": "Sumpah pemuda adalah sumpah para pemuda untuk memperjuangkan kemerdekaan Indonesia hingga titik darah penghabisan... ",
+    "filename": "lilik.zip",
+    "uploaded_at": "2021-06-24T05:44:22.806",
+    "nilai": 100.0
+  }
+},
+{
+  "model": "task_management.filesiswa",
+  "pk": 46,
+  "fields": {
+    "materi": 41,
+    "student_name": "Lu'lu'",
+    "keterangan": "Saya sudah y bu",
+    "filename": "lulu.zip",
+    "uploaded_at": "2021-06-24T05:44:22.806",
+    "nilai": 99.0
+  }
+},
+{
+  "model": "task_management.filesiswa",
+  "pk": 47,
+  "fields": {
+    "materi": 41,
+    "student_name": "Faiqoturrohmah",
+    "keterangan": "Selesai",
+    "filename": "faiqoturrohmah.zip",
+    "uploaded_at": "2021-06-24T05:44:22.806",
+    "nilai": 98.0
+  }
+},
+{
+  "model": "task_management.filesiswa",
+  "pk": 53,
+  "fields": {
+    "materi": 37,
+    "student_name": "Ummu",
+    "keterangan": "Mengumpulkan Tugas",
+    "filename": "ummu.zip",
+    "uploaded_at": "2021-06-24T05:44:22.806",
+    "nilai": 99.0
+  }
+},
+{
+  "model": "task_management.filesiswa",
+  "pk": 54,
+  "fields": {
+    "materi": 37,
+    "student_name": "Faiqotur",
+    "keterangan": "Sudah bu",
+    "filename": "faiqotur.zip",
+    "uploaded_at": "2021-06-24T05:44:22.806",
+    "nilai": 0.0
+  }
+},
+{
+  "model": "task_management.filesiswa",
+  "pk": 58,
+  "fields": {
+    "materi": 39,
+    "student_name": "Ummu",
+    "keterangan": "Tugas",
+    "filename": "ummu.zip",
+    "uploaded_at": "2021-06-24T05:44:22.806",
+    "nilai": 90.0
+  }
+},
+{
+  "model": "task_management.filesiswa",
+  "pk": 59,
+  "fields": {
+    "materi": 39,
+    "student_name": "Faiqotur",
+    "keterangan": "Kata kerja ...",
+    "filename": "faiqotur.zip",
+    "uploaded_at": "2021-06-24T05:44:22.806",
+    "nilai": 80.0
+  }
+},
+{
+  "model": "task_management.archivemateri",
+  "pk": 8,
+  "fields": {
+    "materi": 37,
+    "progresshash": "b5c02f43d38147e7bd8a5fb060813608"
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$260000$oWclc6gv7OQY62UatB2HXg$X7AH2ENe6p0/3pjOR5ExiVksfLJ8zXxjM45uBXEvVuQ=",
+    "last_login": "2021-06-26T06:20:20.121",
+    "is_superuser": true,
+    "username": "afdhal",
+    "first_name": "Muhammad",
+    "last_name": "Afar",
+    "email": "afdhal@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-06-16T11:50:39",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$260000$Q8vQvK0xzy1dGShVr9mjxU$KLgs4KKemD2xkkRvPRpxBZ9Fc04fGmgfkXGfY+SKKVg=",
+    "last_login": "2021-06-25T15:13:33.034",
+    "is_superuser": false,
+    "username": "guru2",
+    "first_name": "Guru 2",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-20T17:53:21",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$260000$lw7tK8hdAIsakHqAV8aqvi$q5MxsJypY47M3AjQp+bLgavXsU7YLv6hpVxKNB6MCZA=",
+    "last_login": "2021-06-26T06:20:39.076",
+    "is_superuser": false,
+    "username": "guru1",
+    "first_name": "Guru 1",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-24T05:22:28",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$260000$j1ZOlYpZRrnGUaZtLTP2BF$o2G23RietvCnsJamXU0+7pmVx0dQC1L7QKjg5hBAFFo=",
+    "last_login": "2021-06-25T15:13:49.974",
+    "is_superuser": false,
+    "username": "guru3",
+    "first_name": "Guru 3",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-24T05:27:20",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$260000$hpCHRqz2tPcoLmYyXirECW$tPCK0gwWy6neWzxHJiZzi/mDyMBuZ7ReqRYLghzWj+o=",
+    "last_login": "2021-06-26T06:01:26.759",
+    "is_superuser": false,
+    "username": "guru4",
+    "first_name": "Guru 4",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-24T05:32:32",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$260000$HHcyiEbzG58THIM7wwCUfK$C4phIokNivLOxwbVTC+nzhIci745G6yotv4WmlxUKZY=",
+    "last_login": "2021-06-25T15:19:01.914",
+    "is_superuser": false,
+    "username": "guru5",
+    "first_name": "Guru 5",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-24T05:39:07",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "06zwgfz0if2s5za1ifmzxx3skaqhvmat",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUVJHTsVIztniOw4JQXUSk07Ie4OlTrA-t97_2USb2tNWytLGtWcTefM6XcUzo8y7UTvPN1mm-dpXUaxu2IP2ux11vK8HO7fQeVWv3XsM2YgUsCe2IlER4IFVIagHBGJhwCeFDsgdcDsoQMPEpBQEc37A_zkN2E:1lwFPQ:WMyus96_SE-nQdc7CSw-QeErLddJB6tFjESTIkoV9oc",
+    "expire_date": "2021-07-08T09:48:04.835"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "17b5wq0xmdi2xsxzbntnxmuy0jqkbzh3",
+  "fields": {
+    "session_data": "e30:1luvCE:EkuW66CQ11DId5-bgsrC1N9t1gxZ5lAPg4zHLyATRH4",
+    "expire_date": "2021-07-04T18:00:58.519"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6h2wy7pwhdeanygp01yw3wl9zccwt5mm",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAZIKBL956BDDODVA1NSrtqvLsh6UK3_733d5VwW2vauixpYnVVYNXpd8xIL2mD8BPbY9Y0t3WZsh6KPmjX95nlfTvcv4OKvY5aKLIzYAigoBXDJOfgg8XobXYQY8kxoHD2hsgB5iBW8EIRyGMB9fkCJiY5Fw:1lwFCc:YcIRgXL7bIE1oc-N7gdehdCUgy5a4io6qCum9TOZVq4",
+    "expire_date": "2021-07-08T09:34:50.564"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7rwqpl5hn1alu68dcp5g2i8rvwnc4q4d",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUVJHTsVIztniOw4JQXUSk07Ie4OlTrA-t97_2USb2tNWytLGtWcTefM6XcUzo8y7UTvPN1mm-dpXUaxu2IP2ux11vK8HO7fQeVWv3XsM2YgUsCe2IlER4IFVIagHBGJhwCeFDsgdcDsoQMPEpBQEc37A_zkN2E:1lwF9b:XTQV6_2MXWunjgJKN4rMtIHIKwpxLRWzhlDOr6wpT5k",
+    "expire_date": "2021-07-08T09:31:43.101"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cpo8dc61elaqgxnk62l0wkwenev9nsqs",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnJ-htK-pzB2vUuOIBiKU4qxN0hUgpo38y8l0q4rSVtTZY0sTorUKffjTA_ZN4B33G-VZ3rvC4T6V3RB216rCzPy-H-HRRs5VsjxxCEhmCsXMFKBDJE0WEmP9DAve_YAzrgbMFxb6SLFCxFYO8DOvX-APa3OAk:1lvt37:SZaExwvk8y8_z0HT3U4_7BL2rTwwD0Tz5cqPe7DT4x4",
+    "expire_date": "2021-07-07T09:55:33.788"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dzfni6xrd0y3gddr4t6nff5g9e0qsued",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUVJHTsVIztniOw4JQXUSk07Ie4OlTrA-t97_2USb2tNWytLGtWcTefM6XcUzo8y7UTvPN1mm-dpXUaxu2IP2ux11vK8HO7fQeVWv3XsM2YgUsCe2IlER4IFVIagHBGJhwCeFDsgdcDsoQMPEpBQEc37A_zkN2E:1lwE1K:CVGwf60wFcoPhjnlgMuKnDPFKNpYCR8Jpjsmhu2itCY",
+    "expire_date": "2021-07-08T08:19:06.598"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "en1pzqtp09ixxeahh6dnm4xcazvx7mi1",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAZIKBL956BDDODVA1NSrtqvLsh6UK3_733d5VwW2vauixpYnVVYNXpd8xIL2mD8BPbY9Y0t3WZsh6KPmjX95nlfTvcv4OKvY5aKLIzYAigoBXDJOfgg8XobXYQY8kxoHD2hsgB5iBW8EIRyGMB9fkCJiY5Fw:1lwh3F:AVv-IesqsYLfUOjsv-OQqkszD_QKjTdJa2r3dkquz7g",
+    "expire_date": "2021-07-09T15:19:01.923"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ghgf71w0hbwlpueluybqme6609p4vk6j",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAZIKBL956BDDODVA1NSrtqvLsh6UK3_733d5VwW2vauixpYnVVYNXpd8xIL2mD8BPbY9Y0t3WZsh6KPmjX95nlfTvcv4OKvY5aKLIzYAigoBXDJOfgg8XobXYQY8kxoHD2hsgB5iBW8EIRyGMB9fkCJiY5Fw:1lwFAn:IFy7jSa7K2t2agmqoni77RkxBFgUl8vAG-hPohuP3CI",
+    "expire_date": "2021-07-08T09:32:57.157"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "i5dfgqt8s9dmdrlpymizrahfgdnj39bs",
+  "fields": {
+    "session_data": "e30:1luumf:ETkftmuihgrqYoLmCbAqRI3e8VUtiw7DP_9LKUAMQ6Y",
+    "expire_date": "2021-07-04T17:34:33.368"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jtt95mh27rf2npy0fg56oedj79r5wvth",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAZIKBL956BDDODVA1NSrtqvLsh6UK3_733d5VwW2vauixpYnVVYNXpd8xIL2mD8BPbY9Y0t3WZsh6KPmjX95nlfTvcv4OKvY5aKLIzYAigoBXDJOfgg8XobXYQY8kxoHD2hsgB5iBW8EIRyGMB9fkCJiY5Fw:1lwFAI:iXI7isguxHMl2LI-td1ovuq3BnkdSgUOZSKJSSE7rWc",
+    "expire_date": "2021-07-08T09:32:26.010"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kk3slk130gillsl1qwl65936bqcifd3q",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pDOYBFcuvcMZBgGqRpISrsy3l2bdKHb_977LxVoXUpYu8xhSuqsENThd4zED6kbSXeqt6a51WWeot4UvdOury3J87K7fweFevnWQkcDgxkYAa0lZzgbpgQgYGI-ofMIOfrRWQIHIydxCT0LZbRk0av3B_ktN_Q:1lwF9f:iJmjYfn9i8mBTAoWecrXA_-8WO_EJQmIjXvzJI-C5kk",
+    "expire_date": "2021-07-08T09:31:47.217"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lemdcbpm43rzsajnyxds23f7t06y6q3i",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAZIKBL956BDDODVA1NSrtqvLsh6UK3_733d5VwW2vauixpYnVVYNXpd8xIL2mD8BPbY9Y0t3WZsh6KPmjX95nlfTvcv4OKvY5aKLIzYAigoBXDJOfgg8XobXYQY8kxoHD2hsgB5iBW8EIRyGMB9fkCJiY5Fw:1lwFJI:hN-ke20DL6--aJut4ZQ1c2UuK1M_SXFQdsrRk2d0gTQ",
+    "expire_date": "2021-07-08T09:41:44.276"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "molmrdi8ms4vceqvfq56nqy23zyba20h",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAZIKBL956BDDODVA1NSrtqvLsh6UK3_733d5VwW2vauixpYnVVYNXpd8xIL2mD8BPbY9Y0t3WZsh6KPmjX95nlfTvcv4OKvY5aKLIzYAigoBXDJOfgg8XobXYQY8kxoHD2hsgB5iBW8EIRyGMB9fkCJiY5Fw:1lwF9S:6XoCePxnH8rgooui2jWjTREY5IHJ2onbYkS5L3sRRb8",
+    "expire_date": "2021-07-08T09:31:34.293"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "nsp2b8ikfy1xqnyt029p3r3t2l9ocbuv",
+  "fields": {
+    "session_data": "e30:1luvDF:cXT2Iq3e7KkzuadJetvdTa0qjq2v2FHNaftAHReN3iA",
+    "expire_date": "2021-07-04T18:02:01.446"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qki1zyivt30b0flhrsxpw1z9zlt9ypra",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUVJHTsVIztniOw4JQXUSk07Ie4OlTrA-t97_2USb2tNWytLGtWcTefM6XcUzo8y7UTvPN1mm-dpXUaxu2IP2ux11vK8HO7fQeVWv3XsM2YgUsCe2IlER4IFVIagHBGJhwCeFDsgdcDsoQMPEpBQEc37A_zkN2E:1lwE0E:mM766RnsosT9gLSRi_h4frf41V80pFoTmjnq6Bo_3rk",
+    "expire_date": "2021-07-08T08:17:58.498"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "thnjshfbnh88wpj2m2dz20i4i2ien7j9",
+  "fields": {
+    "session_data": "e30:1luvBy:i8FulEczfgYt3k-A_xK-NGDMwRriISh4Zc4sSbGJeIY",
+    "expire_date": "2021-07-04T18:00:42.063"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tkkt71n5grcb8srde7vl124y25ngbmuk",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnJ-htK-pzB2vUuOIBiKU4qxN0hUgpo38y8l0q4rSVtTZY0sTorUKffjTA_ZN4B33G-VZ3rvC4T6V3RB216rCzPy-H-HRRs5VsjxxCEhmCsXMFKBDJE0WEmP9DAve_YAzrgbMFxb6SLFCxFYO8DOvX-APa3OAk:1lvcrP:RpWQV2RbvueUPv8XTesscdzex-DizOFgvPJZof9SiMA",
+    "expire_date": "2021-07-06T16:38:23.657"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tzbokhu608xqgt2xtt1bmcoe2jdvgsld",
+  "fields": {
+    "session_data": ".eJxVjDsOgzAQRO_iOrLw-oNJmZ4zWPauNyaJjIShinL3gESRdKN5b-YtQtzWEraWlzCRuAoQl98uRXzmegB6xHqfJc51XaYkD0WetMlxpvy6ne7fQYmt7GuLpuMenTEA6JzSjhSm2AENmckPHgwyMGnndQaPcc_ecK-VtWytFZ8v3W03sQ:1lwFAw:bZShtyq4Zqxy9bapO5uvCq_USwY6QKdg01dHrAG5MDg",
+    "expire_date": "2021-07-08T09:33:06.734"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "u738tj82uch3b9mty3os9rxm8m8isfos",
+  "fields": {
+    "session_data": ".eJxVjDsOgzAQRO_iOrLw-oNJmZ4zWPauNyaJjIShinL3gESRdKN5b-YtQtzWEraWlzCRuAoQl98uRXzmegB6xHqfJc51XaYkD0WetMlxpvy6ne7fQYmt7GuLpuMenTEA6JzSjhSm2AENmckPHgwyMGnndQaPcc_ecK-VtWytFZ8v3W03sQ:1lwFJJ:Swvf5RUISNv9iTBGdEQCOFMz1Q5bUSKmLM_Smic92jU",
+    "expire_date": "2021-07-08T09:41:45.439"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "un9egah1rklqmjttkv1yj8n1jkc31yvz",
+  "fields": {
+    "session_data": "e30:1luv87:AgO9mKGJKde7VVmatZJdimGIdDJGiiUlv7UNEdZ0mSA",
+    "expire_date": "2021-07-04T17:56:43.196"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "upiyr27avnpadpau9tpeh7nhmt7ub2y7",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUVJHTsVIztniOw4JQXUSk07Ie4OlTrA-t97_2USb2tNWytLGtWcTefM6XcUzo8y7UTvPN1mm-dpXUaxu2IP2ux11vK8HO7fQeVWv3XsM2YgUsCe2IlER4IFVIagHBGJhwCeFDsgdcDsoQMPEpBQEc37A_zkN2E:1lwbrR:7zzXHZzkv7_7GTC-SnI1irvN49MgX5Vq06ZNlfKCnSI",
+    "expire_date": "2021-07-09T09:46:29.695"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2021-06-16T11:55:34.198",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "1",
+    "object_repr": "Bahasa Indonesia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2021-06-16T11:56:20.373",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "1",
+    "object_repr": " ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2021-06-16T11:58:00.046",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "afdhal",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2021-06-16T13:01:13.027",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "2",
+    "object_repr": "Matematika",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2021-06-17T14:45:00.066",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "1",
+    "object_repr": "Mengajar object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2021-06-17T14:58:51.840",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "2",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Matematika",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2021-06-17T23:32:43.981",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "3",
+    "object_repr": "Sejarah Indonesia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2021-06-17T23:33:12.457",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "3",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Bahasa Indonesia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2021-06-17T23:33:21.712",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "1",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Bahasa Indonesia",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2021-06-18T00:18:08.564",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "3",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Bahasa Indonesia",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2021-06-18T00:18:08.697",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "2",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Matematika",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2021-06-18T01:10:42.760",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "6",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Sejarah Indonesia",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2021-06-18T01:10:42.835",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "5",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Matematika",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2021-06-18T01:10:42.913",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "4",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Bahasa Indonesia",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2021-06-18T01:35:59.172",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "9",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Sejarah Indonesia",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2021-06-18T01:35:59.311",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "8",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Matematika",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2021-06-18T01:35:59.400",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "7",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Bahasa Indonesia",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2021-06-18T01:49:44.943",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "12",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Bahasa Indonesia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2021-06-18T01:49:56.782",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "10",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Bahasa Indonesia",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2021-06-18T01:50:10.276",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "12",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Sejarah Indonesia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Mapel\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2021-06-18T02:04:32.509",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "12",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Sejarah Indonesia",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2021-06-18T02:04:32.592",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "11",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Matematika",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2021-06-18T02:04:41.358",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "13",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Bahasa Indonesia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2021-06-18T02:05:07.109",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "13",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Matematika",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Mapel\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2021-06-18T02:06:56.440",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "13",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Sejarah Indonesia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Mapel\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2021-06-18T02:07:23.513",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "13",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Bahasa Indonesia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Mapel\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2021-06-18T02:08:36.557",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "13",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Sejarah Indonesia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Mapel\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2021-06-18T02:09:13.647",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "13",
+    "object_repr": "Muhammad Afdhal Arrazy mengajar Bahasa Indonesia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Mapel\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2021-06-18T02:16:29.301",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "afdhal",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2021-06-18T02:18:51.666",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "14",
+    "object_repr": "Muhammad Afar mengajar Matematika",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2021-06-18T02:19:11.645",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "13",
+    "object_repr": "Muhammad Afar mengajar Bahasa Indonesia",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2021-06-18T02:23:30.480",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "14",
+    "object_repr": "Muhammad Afar mengajar Matematika",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2021-06-18T02:23:52.904",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mengajar"
+    ],
+    "object_id": "15",
+    "object_repr": "Muhammad Afar mengajar Bahasa Indonesia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2021-06-18T02:39:59.147",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "3",
+    "object_repr": "Sejarah Indonesia",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2021-06-18T08:44:26.026",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "materi"
+    ],
+    "object_id": "1",
+    "object_repr": "Puisi 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2021-06-18T08:45:12.928",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "materi"
+    ],
+    "object_id": "1",
+    "object_repr": "Puisi 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2021-06-18T09:13:16.088",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "materi"
+    ],
+    "object_id": "2",
+    "object_repr": "Belajar Membaca",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2021-06-19T10:37:40.776",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "filesiswa"
+    ],
+    "object_id": "2",
+    "object_repr": "Budi",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2021-06-19T10:38:51.365",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "filesiswa"
+    ],
+    "object_id": "1",
+    "object_repr": "Budi",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2021-06-19T11:09:24.538",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "filesiswa"
+    ],
+    "object_id": "5",
+    "object_repr": "Muhammad Afdhal Arrazy",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2021-06-19T11:09:24.606",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "filesiswa"
+    ],
+    "object_id": "4",
+    "object_repr": "Muhammad Afdhal",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2021-06-19T11:09:24.695",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "filesiswa"
+    ],
+    "object_id": "3",
+    "object_repr": "Budi Santoso",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2021-06-20T17:53:21.625",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "budi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2021-06-20T17:53:31.663",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "budi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2021-06-20T17:55:18.969",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "2",
+    "object_repr": "Budi Santoso",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2021-06-21T17:33:55.668",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "2",
+    "object_repr": "Matematika Kelas VII",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2021-06-21T17:34:13.274",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "1",
+    "object_repr": "Matematika Kelas VIII",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2021-06-21T17:34:36.616",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "1",
+    "object_repr": "Matematika Kelas VIII",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2021-06-21T17:34:47.013",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "2",
+    "object_repr": "Matematika Kelas VII",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2021-06-21T17:35:04.599",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "4",
+    "object_repr": "Matematika Kelas IX",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2021-06-23T12:46:59.385",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "hasanbisri",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2021-06-23T12:47:19.193",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "hasanbisri",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2021-06-23T12:48:05.295",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "faiqoturrohmah",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2021-06-23T12:48:18.684",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "faiqoturrohmah",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2021-06-23T12:49:16.211",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "3",
+    "object_repr": "Hasan Bisri",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2021-06-23T12:51:13.608",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "4",
+    "object_repr": "Faiqoturrohmah ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2021-06-23T12:52:54.031",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "nimatul_isnaini",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2021-06-23T12:53:04.064",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "nimatul_isnaini",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2021-06-23T12:53:41.413",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "5",
+    "object_repr": "Nimatul Ismaini",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2021-06-23T12:56:29.596",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "6",
+    "object_repr": "saruji",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2021-06-23T12:56:52.948",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "6",
+    "object_repr": " ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2021-06-23T16:50:55.661",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "6",
+    "object_repr": "saruji",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2021-06-23T16:52:21.620",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "7",
+    "object_repr": "triastutik",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2021-06-23T16:52:31.743",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "7",
+    "object_repr": "triastutik",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2021-06-23T16:53:59.409",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "7",
+    "object_repr": "Triastutik ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2021-06-23T16:56:05.348",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "8",
+    "object_repr": "zakariya",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2021-06-23T16:56:19.788",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "8",
+    "object_repr": "zakariya",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2021-06-23T16:56:34.421",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "7",
+    "object_repr": "Muhammad Zakariya",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"User\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2021-06-23T16:57:01.878",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "7",
+    "object_repr": "triastutik",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2021-06-23T16:58:03.520",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "8",
+    "object_repr": "Triastutik ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2021-06-23T16:59:28.311",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "9",
+    "object_repr": "lilik_setyawati",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2021-06-23T16:59:49.272",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "9",
+    "object_repr": "lilik_setyawati",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2021-06-23T17:00:09.818",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "9",
+    "object_repr": "Lilik Setyawati",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2021-06-23T17:01:04.466",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "10",
+    "object_repr": "suhada",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2021-06-23T17:01:24.080",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "10",
+    "object_repr": "suhada",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2021-06-23T17:03:38.379",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "10",
+    "object_repr": "Suhada ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2021-06-23T17:05:43.453",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "11",
+    "object_repr": "abdullah_hasan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2021-06-23T17:05:57.720",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "11",
+    "object_repr": "abdullah_hasan",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2021-06-23T17:06:14.875",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "11",
+    "object_repr": "Abdullah Hasan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2021-06-23T21:46:38.137",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "12",
+    "object_repr": "kardi_wahyudi_harjo",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2021-06-23T21:46:55.533",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "12",
+    "object_repr": "kardi_wahyudi_harjo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2021-06-23T21:47:16.628",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "13",
+    "object_repr": "fudloli",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2021-06-23T21:47:25.347",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "13",
+    "object_repr": "fudloli",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2021-06-23T21:47:52.916",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "14",
+    "object_repr": "erli_fiana",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2021-06-23T21:48:55.529",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "12",
+    "object_repr": "Kardi Wahyudi Harjo",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2021-06-23T21:49:27.511",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "13",
+    "object_repr": "Fudloli ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2021-06-23T21:49:54.656",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "14",
+    "object_repr": " ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2021-06-23T21:50:33.447",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "14",
+    "object_repr": "erli_fiana",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2021-06-23T21:52:42.689",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "12",
+    "object_repr": "kardi_wahyudi_harjo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2021-06-23T22:27:58.451",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "15",
+    "object_repr": "mira_anisa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2021-06-23T22:28:08.036",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "15",
+    "object_repr": "mira_anisa",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2021-06-23T22:28:41.760",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "16",
+    "object_repr": "nurul_hikmah",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2021-06-23T22:28:50.588",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "16",
+    "object_repr": "nurul_hikmah",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2021-06-23T22:29:10.192",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "17",
+    "object_repr": "fathoni",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2021-06-23T22:29:18.734",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "17",
+    "object_repr": "fathoni",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2021-06-23T22:29:37.432",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "18",
+    "object_repr": "novi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2021-06-23T22:29:49.404",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "18",
+    "object_repr": "novi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2021-06-23T22:30:05.459",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "19",
+    "object_repr": "suryadi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2021-06-23T22:30:41.400",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "15",
+    "object_repr": "Mira Anisa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2021-06-23T22:31:05.902",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "16",
+    "object_repr": "Nurul Hikmah",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2021-06-23T22:31:25.580",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "17",
+    "object_repr": "Fathoni ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2021-06-23T22:31:56.086",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "18",
+    "object_repr": "Novi ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2021-06-23T22:32:15.388",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "19",
+    "object_repr": " ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2021-06-23T22:32:49.976",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "19",
+    "object_repr": "suryadi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2021-06-23T22:34:30.603",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "15",
+    "object_repr": "Mira Anisa",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Pcloud username\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2021-06-23T22:34:59.566",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "15",
+    "object_repr": "Mira Anisa",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2021-06-23T22:35:07.299",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "16",
+    "object_repr": "Nurul Hikmah",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Pcloud username\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2021-06-23T22:42:00.793",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "16",
+    "object_repr": "Nurul Hikmah",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Pcloud username\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2021-06-23T23:03:41.881",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "4",
+    "object_repr": "Matematika Kelas IX",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2021-06-23T23:03:41.907",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "2",
+    "object_repr": "Matematika Kelas VII",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2021-06-23T23:03:41.927",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "1",
+    "object_repr": "Matematika Kelas VIII",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2021-06-23T23:07:50.524",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "4",
+    "object_repr": "Matematika 8",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2021-06-23T23:08:07.779",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "2",
+    "object_repr": "Matematika Kelas 7",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2021-06-23T23:08:15.415",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "2",
+    "object_repr": "Matematika 7",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2021-06-23T23:08:31.367",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "4",
+    "object_repr": "Matematika 9",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2021-06-23T23:08:39.318",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "1",
+    "object_repr": "Matematika 8",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2021-06-24T04:21:34.802",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "5",
+    "object_repr": "Pendidikan Agama Islam 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2021-06-24T04:21:52.434",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "6",
+    "object_repr": "Pendidikan Agama Islam 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2021-06-24T04:22:07.651",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "7",
+    "object_repr": "Pendidikan Agama Islam 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2021-06-24T04:22:32.001",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "8",
+    "object_repr": "Pendidikan Pancasila dan Kewarganegaraan 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2021-06-24T04:22:45.141",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "9",
+    "object_repr": "Pendidikan Pancasila dan Kewarganegaraan 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2021-06-24T04:22:58.654",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "10",
+    "object_repr": "Pendidikan Pancasila dan Kewarganegaraan 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2021-06-24T04:23:26.649",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "11",
+    "object_repr": "Bahasa Indonesia 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2021-06-24T04:23:39.695",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "12",
+    "object_repr": "Bahasa Indonesia 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2021-06-24T04:23:57.010",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "13",
+    "object_repr": "Bahasa Indonesia 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2021-06-24T04:24:13.698",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "14",
+    "object_repr": "Bahasa Arab 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2021-06-24T04:24:26.277",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "15",
+    "object_repr": "Bahasa Arab 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2021-06-24T04:24:42.704",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "16",
+    "object_repr": "Bahasa Arab 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2021-06-24T04:25:15.498",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "17",
+    "object_repr": "Ilmu Pengetahuan Alam 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2021-06-24T04:25:27.018",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "18",
+    "object_repr": "Ilmu Pengetahuan Alam 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2021-06-24T04:25:40.787",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "19",
+    "object_repr": "Ilmu Pengetahuan Alam 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2021-06-24T04:26:05.197",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "20",
+    "object_repr": "Ilmu Pengetahuan Sosial 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2021-06-24T04:26:31.120",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "21",
+    "object_repr": "Ilmu Pengetahuan Sosial 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2021-06-24T04:26:43.778",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "22",
+    "object_repr": "Ilmu Pengetahuan Sosial 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2021-06-24T04:27:07.421",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "23",
+    "object_repr": "Bahasa Inggris 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2021-06-24T04:27:17.880",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "24",
+    "object_repr": "Bahasa Inggris 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2021-06-24T04:27:29.398",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "25",
+    "object_repr": "Bahasa Inggris 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2021-06-24T04:27:46.187",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "26",
+    "object_repr": "Seni Budaya 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2021-06-24T04:27:59.094",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "27",
+    "object_repr": "Seni Budaya 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2021-06-24T04:28:09.535",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "28",
+    "object_repr": "Seni Budaya 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2021-06-24T04:29:00.976",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "29",
+    "object_repr": "Pendidikan Jasmani, Olahraga, dan Kesehatan 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2021-06-24T04:29:13.246",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "30",
+    "object_repr": "Pendidikan Jasmani, Olahraga, dan Kesehatan 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2021-06-24T04:29:25.794",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "31",
+    "object_repr": "Pendidikan Jasmani, Olahraga, dan Kesehatan 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2021-06-24T04:29:40.810",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "32",
+    "object_repr": "Prakarya 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2021-06-24T04:29:52.590",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "33",
+    "object_repr": "Prakarya 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2021-06-24T04:30:09.258",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "34",
+    "object_repr": "Prakarya 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2021-06-24T04:30:22.948",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "35",
+    "object_repr": "Muatan Lokal 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2021-06-24T04:30:38.609",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "36",
+    "object_repr": "Muatan Lokal 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2021-06-24T04:30:52.774",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "37",
+    "object_repr": "Muatan Lokal 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.757",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "11",
+    "object_repr": "abdullah_hasan",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 151,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.769",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "14",
+    "object_repr": "erli_fiana",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 152,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.785",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "faiqoturrohmah",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 153,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.791",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "17",
+    "object_repr": "fathoni",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 154,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.798",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "13",
+    "object_repr": "fudloli",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 155,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.804",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "hasanbisri",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 156,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.812",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "12",
+    "object_repr": "kardi_wahyudi_harjo",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 157,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.819",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "9",
+    "object_repr": "lilik_setyawati",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 158,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.875",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "15",
+    "object_repr": "mira_anisa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 159,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.891",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "nimatul_isnaini",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 160,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.903",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "18",
+    "object_repr": "novi",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 161,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.911",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "16",
+    "object_repr": "nurul_hikmah",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 162,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.919",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "6",
+    "object_repr": "saruji",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 163,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.926",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "10",
+    "object_repr": "suhada",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 164,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.948",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "19",
+    "object_repr": "suryadi",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 165,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.963",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "7",
+    "object_repr": "triastutik",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 166,
+  "fields": {
+    "action_time": "2021-06-24T05:18:19.991",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "8",
+    "object_repr": "zakariya",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 167,
+  "fields": {
+    "action_time": "2021-06-24T05:22:28.272",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "20",
+    "object_repr": "guru1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 168,
+  "fields": {
+    "action_time": "2021-06-24T05:22:51.019",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "20",
+    "object_repr": " ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 169,
+  "fields": {
+    "action_time": "2021-06-24T05:23:04.768",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "20",
+    "object_repr": "guru1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 170,
+  "fields": {
+    "action_time": "2021-06-24T05:23:37.371",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "guru2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 171,
+  "fields": {
+    "action_time": "2021-06-24T05:27:20.283",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "21",
+    "object_repr": "guru3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 172,
+  "fields": {
+    "action_time": "2021-06-24T05:27:49.355",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "21",
+    "object_repr": " ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 173,
+  "fields": {
+    "action_time": "2021-06-24T05:28:05.352",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "21",
+    "object_repr": "guru3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 174,
+  "fields": {
+    "action_time": "2021-06-24T05:32:32.536",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "22",
+    "object_repr": "guru4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 175,
+  "fields": {
+    "action_time": "2021-06-24T05:32:39.902",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "22",
+    "object_repr": "guru4",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 176,
+  "fields": {
+    "action_time": "2021-06-24T05:32:59.626",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "22",
+    "object_repr": "Guru 4 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 177,
+  "fields": {
+    "action_time": "2021-06-24T05:39:07.827",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "23",
+    "object_repr": "guru5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 178,
+  "fields": {
+    "action_time": "2021-06-24T05:39:33.824",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "teacher"
+    ],
+    "object_id": "23",
+    "object_repr": " ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 179,
+  "fields": {
+    "action_time": "2021-06-24T05:40:23.148",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "23",
+    "object_repr": "guru5",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 180,
+  "fields": {
+    "action_time": "2021-06-24T05:40:52.472",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "20",
+    "object_repr": "guru1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 181,
+  "fields": {
+    "action_time": "2021-06-24T05:42:05.302",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "guru2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 182,
+  "fields": {
+    "action_time": "2021-06-25T10:00:38.090",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "31",
+    "object_repr": "Pendidikan Jasmani dan Olahraga 9",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 183,
+  "fields": {
+    "action_time": "2021-06-25T10:00:51.089",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "30",
+    "object_repr": "Pendidikan Jasmani dan Olahraga 8",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 184,
+  "fields": {
+    "action_time": "2021-06-25T10:01:01.417",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "29",
+    "object_repr": "Pendidikan Jasmani dan Olahraga 7",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 185,
+  "fields": {
+    "action_time": "2021-06-25T10:01:20.542",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "35",
+    "object_repr": "Bahasa Daerah 7",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 186,
+  "fields": {
+    "action_time": "2021-06-25T10:01:29.652",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "36",
+    "object_repr": "Bahasa Daerah 8",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 187,
+  "fields": {
+    "action_time": "2021-06-25T10:01:38.439",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "37",
+    "object_repr": "Bahasa Daerah 9",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 188,
+  "fields": {
+    "action_time": "2021-06-25T10:02:09.921",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "38",
+    "object_repr": "Aswaja 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 189,
+  "fields": {
+    "action_time": "2021-06-25T10:02:21.470",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "39",
+    "object_repr": "Aswaja 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 190,
+  "fields": {
+    "action_time": "2021-06-25T10:02:31.260",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "40",
+    "object_repr": "Aswaja 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 191,
+  "fields": {
+    "action_time": "2021-06-25T10:03:14.401",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "5",
+    "object_repr": "Al Quran Hadits 7",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 192,
+  "fields": {
+    "action_time": "2021-06-25T10:03:27.462",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "6",
+    "object_repr": "Al Quran Hadits 8",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 193,
+  "fields": {
+    "action_time": "2021-06-25T10:03:39.364",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "7",
+    "object_repr": "Al Quran Hadits 9",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 194,
+  "fields": {
+    "action_time": "2021-06-25T10:03:59.169",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "41",
+    "object_repr": "Akidah Akhlak 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 195,
+  "fields": {
+    "action_time": "2021-06-25T10:04:07.082",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "42",
+    "object_repr": "Akidah Akhlak 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 196,
+  "fields": {
+    "action_time": "2021-06-25T10:04:16.216",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "43",
+    "object_repr": "Akidah Akhlak 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 197,
+  "fields": {
+    "action_time": "2021-06-25T10:04:27.005",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "44",
+    "object_repr": "FIkih 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 198,
+  "fields": {
+    "action_time": "2021-06-25T10:04:36.268",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "45",
+    "object_repr": "Fikih 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 199,
+  "fields": {
+    "action_time": "2021-06-25T10:04:46.637",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "46",
+    "object_repr": "Fikih 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 200,
+  "fields": {
+    "action_time": "2021-06-25T10:04:55.988",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "47",
+    "object_repr": "Ski 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 201,
+  "fields": {
+    "action_time": "2021-06-25T10:05:03.535",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "48",
+    "object_repr": "Ski 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 202,
+  "fields": {
+    "action_time": "2021-06-25T10:05:12.482",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "mapel"
+    ],
+    "object_id": "49",
+    "object_repr": "Ski 9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 203,
+  "fields": {
+    "action_time": "2021-06-25T14:30:12.623",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "archivemateri"
+    ],
+    "object_id": "1",
+    "object_repr": "Lawan kata",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 204,
+  "fields": {
+    "action_time": "2021-06-25T14:45:58.133",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "archivemateri"
+    ],
+    "object_id": "3",
+    "object_repr": "Mendeskripsikan Kata",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 205,
+  "fields": {
+    "action_time": "2021-06-25T14:51:43.911",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "archivemateri"
+    ],
+    "object_id": "2",
+    "object_repr": "Lawan kata",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 206,
+  "fields": {
+    "action_time": "2021-06-26T06:18:27.154",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "archivemateri"
+    ],
+    "object_id": "5",
+    "object_repr": "Perpindahan kalor",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 207,
+  "fields": {
+    "action_time": "2021-06-26T06:18:36.513",
+    "user": [
+      "afdhal"
+    ],
+    "content_type": [
+      "task_management",
+      "archivemateri"
+    ],
+    "object_id": "11",
+    "object_repr": "Perpindahan kalor",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "task_management.teacher",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "afdhal"
+    ],
+    "pcloud_username": "devgame1100@gmail.com",
+    "pcloud_password": "Devsukosari0308"
+  }
+},
+{
+  "model": "task_management.teacher",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "guru2"
+    ],
+    "pcloud_username": "muhammadafar00@gmail.com",
+    "pcloud_password": "xaxa12345"
+  }
+},
+{
+  "model": "task_management.teacher",
+  "pk": 20,
+  "fields": {
+    "user": [
+      "guru1"
+    ],
+    "pcloud_username": "afdhalarrazy111@gmail.com",
+    "pcloud_password": "bebek123"
+  }
+},
+{
+  "model": "task_management.teacher",
+  "pk": 21,
+  "fields": {
+    "user": [
+      "guru3"
+    ],
+    "pcloud_username": "devgame1100@gmail.com",
+    "pcloud_password": "Devsukosari0308"
+  }
+},
+{
+  "model": "task_management.teacher",
+  "pk": 22,
+  "fields": {
+    "user": [
+      "guru4"
+    ],
+    "pcloud_username": "darululumsukosari@yandex.com",
+    "pcloud_password": "darul123"
+  }
+},
+{
+  "model": "task_management.teacher",
+  "pk": 23,
+  "fields": {
+    "user": [
+      "guru5"
+    ],
+    "pcloud_username": "sgondanglegi@yandex.com",
+    "pcloud_password": "gondanglegi123"
+  }
+}
+]

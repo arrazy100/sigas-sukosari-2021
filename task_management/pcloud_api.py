@@ -12,7 +12,7 @@ def usedSpace(login_data):
     user_info = login_data.userinfo()
     byte_to_mb = 1 / 1048576
 
-    used_space = math.ceil(user_info["usedquota"] * byte_to_mb)
+    used_space = round(user_info["usedquota"] * byte_to_mb, 1)
     total_space = math.ceil(user_info["quota"] * byte_to_mb)
 
     return [used_space, total_space]
@@ -62,6 +62,17 @@ def listFolder(login_data):
         folders.append(folder["name"])
 
     return folders
+
+def folderSize(login_data, path):
+    listfolder = login_data.listfolder(path=path)
+    total_size = 0
+    byte_to_mb = 1 / 1048576
+
+    if listfolder["result"] == 0:
+        for file in listfolder["metadata"]["contents"]:
+            total_size += round(file["size"] * byte_to_mb, 1)
+
+    return total_size
 
 def listFileFromFolder(login_data, folder_name):
     folder = login_data.listfolder(path = '/' + folder_name)
@@ -113,7 +124,7 @@ def downloadFolder(login_data, folder_name):
 
         login_data.file_open(path = path, flags = int("0x0040", 16))
         binary = login_data.file_read(fd = i, count = file_size)
-        
+
         try:
             os.makedirs(folder_name)
         except:
@@ -141,7 +152,7 @@ def uploadFiles(login_data, files, folder_name, zip_name):
         zf.writestr(file_name, binary)
 
         i += 1
-    
+
     path = "/" + folder_name + "/" + zip_name
 
     zf.close()
@@ -151,9 +162,21 @@ def uploadFiles(login_data, files, folder_name, zip_name):
     login_data.file_open(path = path, flags = int("0x0040", 16))
     status = login_data.file_write(fd = 1, data = data)
     login_data.file_close(fd = 1)
-    
+
     if (status["result"] == 0):
         print(zip_name + " berhasil diupload ke " + folder_name)
+
+def createArchive(login_data, path, topath, filename, progresshash):
+    stat = login_data.stat(path=path)
+    folderid = stat['metadata']['folderid']
+    status = login_data.savezip(folderid=folderid, topath=topath + filename, progresshash=progresshash)
+
+    return status
+
+def getArchiveProgress(login_data, progresshash):
+    status = login_data.savezipprogress(progresshash=progresshash)
+
+    return status
 
 # pc = login('devgame1100@gmail.com', 'Devsukosari0308')
 # print(deleteFolder(pc, "1"))

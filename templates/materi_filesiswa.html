@@ -49,7 +49,7 @@
                 <div class="row d-flex justify-content-center">
 
                     <!-- Earnings (Monthly) Card Example -->
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-8">
 
                         <div class="col">
 
@@ -90,6 +90,52 @@
                                     </div>
                                 </div>
 
+                                {% if file_siswa %}
+
+                                {% if is_archive and not archiving %}
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <a id="downloadarchive_btn" href="{% url 'download_archive' mapel_id=mapel_id slug=slug %}"
+                                            class="btn btn-success btn-block list-materi-btn">
+                                            Download Archive
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <a id="hapusarchive_btn" href="{% url 'hapus_archive' mapel_id=mapel_id slug=slug %}"
+                                            class="btn btn-success btn-block list-materi-btn">
+                                            Hapus Archive
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {% elif is_archive and archiving %}
+
+                                <div class="row">
+                                    <div class="col mb-4">
+                                        <a
+                                            class="btn btn-warning btn-block list-materi-btn">
+                                            Sedang membuat archive...
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {% else %}
+
+                                <div class="row">
+                                    <div class="col mb-4">
+                                        <a id="archive_btn" href="{% url 'archive_materi' mapel_id=mapel_id slug=slug %}"
+                                            class="btn btn-success btn-block list-materi-btn">
+                                            Membuat Archive
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {% endif %}
+
+                                {% endif %}
+
                                 <div class="row">
                                     <div class="col">
                                         <p style="color: rgba(0, 0, 0, 0.7); font-size: 0.9rem;">Deadline: {{ deadline }}</p>
@@ -115,7 +161,7 @@
                                                 <td scope="row" class="align-middle">{{ forloop.counter }}</th>
                                                 <td class="align-middle">{{ siswa.student_name }}</td>
                                                 <td class="align-middle">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="top: 50%; transform: translateY(25%);">
                                                         <input type="number" name="nilai_field" id="id_{{ siswa.id }}"
                                                             class="form-control" value="{{ siswa.nilai }}" min="0"
                                                             max="100" data-bind="value:id_{{ siswa.id }}" step=".1">
@@ -125,7 +171,7 @@
                                                 <td class="align-middle">
                                                     <div class="row">
                                                         <div class="col">
-                                                            <a
+                                                            <a target="_blank"
                                                                 href="{% url 'download_filesiswa' mapel_id=mapel_id slug=slug filesiswa_id=siswa.id %}"><i
                                                                     style="color: green; font-size: 1.4rem;"
                                                                     class="fas fa-download"></i></a>
@@ -176,7 +222,7 @@
                             </div>
                             <div class="modal-footer border-top-0 d-flex justify-content-center">
                                 <div class="col" id="hapusFileSiswa_btn" data-id="0">
-                                    <button type="submit" class="btn btn-block btn-success">Hapus</button>
+                                    <button id="hapus_btn" type="submit" class="btn btn-block btn-success">Hapus</button>
                                 </div>
                                 <div class="col">
                                     <button type="button" class="btn btn-block btn-danger"
@@ -200,8 +246,34 @@
         {% include 'layout/load_js.html' %}
         <script>
             $('#hapusFileSiswa_btn').click(function () {
+                $("#hapus_btn").attr("disabled", true);
+                $("#hapus_btn").text("Sedang menghapus...");
                 let url = "{% url 'hapus_filesiswa' mapel_id=mapel_id slug=slug filesiswa_id=0 %}".replace(/0/, $(this).data('id'));
                 window.location = url;
+            });
+
+            $('#archive_btn').click(function(event) {
+                if ($(this).hasClass("disabled")) {
+                    event.preventDefault();
+                }
+                $(this).text("Sedang membuat archive...");
+                $(this).addClass("disabled");
+            });
+
+            $('#downloadarchive_btn').click(function(event) {
+                if ($(this).hasClass("disabled")) {
+                    event.preventDefault();
+                }
+                $(this).text("Sedang memuat archive...");
+                $(this).addClass("disabled");
+            });
+
+            $('#hapusarchive_btn').click(function(event) {
+                if ($(this).hasClass("disabled")) {
+                    event.preventDefault();
+                }
+                $(this).text("Sedang menghapus archive...");
+                $(this).addClass("disabled");
             });
         </script>
 
